@@ -1,0 +1,2751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- link icon -->
+  <link rel="icon" href="img/icono_qhawana.png" />
+
+  <!-- SWIPER JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- aos animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- style main -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/card-blog.css" />
+
+  <!-- loader -->
+  <link rel="stylesheet" href="css/loading.css" />
+
+  <!-- style lightbox gallery -->
+  <link href="css/lightbox.css" rel="stylesheet" />
+  <!-- tailwind css -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- title site web -->
+  <title>Qhawana | Condominio Ecológico</title>
+</head>
+
+<body>
+  <nav class="navbar duration-100 ease-in ease-out navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="logo qhawana.png" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="https://inviersis.pe/">Sobre Inviersis</a>
+          </li>
+          <li class="nav-item dropdown" id="myDropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+              Condomnio Qhawana - Tarapoto
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="ficha-tecnica/">
+                  Ficha Técnica
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#modelo-casas">
+                  Modelo de Casas</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#page-contacto" tabindex="-1" aria-disabled="true">Contacto</a>
+          </li>
+          <a href="https://wa.link/m440kr" class="btn-nav-whatsapp">
+            <ion-icon name="logo-whatsapp"></ion-icon> Whatsapp
+          </a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- section portada -->
+
+  <!-- Modal video presentacion -->
+  <div class="modal modal-portada fade" id="exampleModal" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">
+            Video de Bienvenida
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <video width="100%" controls="true" src="img/promo qwhana (editada).mp4"></video>
+          <a target="_blank" href="https://wa.link/m440kr" class="btn-info-qhawana bg-primario">
+            Quiero más información
+          </a>
+          <!-- <iframe
+              width="100%"
+              height="400px"
+              src="https://www.youtube.com/embed/5eWIJeEMIwI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe> -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal formulario de asesor -->
+  <div class="modal modal-asesor fade" id="modal-asesor" tabindex="-1" role="dialog"
+    aria-labelledby="modal-asesor-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title color-secundario" id="exampleModalLabel">
+            Agendar mi reunión
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="form-agenda" class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+              <label for="validationCustom01" class="form-label color-secundario">Nombres</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="Ingresa tu Nombre" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom02" class="form-label color-secundario">Apellidos</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Ingresa tu Apellido"
+                required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label color-secundario">Celular</label>
+              <input type="text" class="form-control" id="validationCustom03" placeholder="Ingresar numero de celular"
+                required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom04" class="form-label color-secundario">Correo electrónico</label>
+              <input type="text" class="form-control" id="validationCustom04" placeholder="ingresa tu correo" required>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-12">
+              <label for="validationCustom05" class="form-label color-secundario">Ciudad de residencia</label>
+              <input type="text" class="form-control" id="validationCustom05" placeholder="ingresa tu ciudad" required>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom06" class="form-label color-secundario">Fecha de reunion</label>
+              <input type="date" class="form-control" id="validationCustom06" required>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom07" class="form-label color-secundario">Hora de reunion</label>
+              <select class="form-control" name="" id="validationCustom07">
+                <option selected value="8:00 am">8:00 am</option>
+                <option value="9:00 am">9:00 am</option>
+                <option value="10:00 am">10:00 am</option>
+                <option value="11:00 am">11:00 am</option>
+                <option value="12:00 pm">12:00 pm</option>
+                <option value="1:00 pm">1:00 pm</option>
+                <option value="2:00 pm">2:00 pm</option>
+                <option value="3:00 pm">3:00 pm</option>
+                <option value="4:00 pm">4:00 pm</option>
+                <option value="5:00 pm">5:00 pm</option>
+                <option value="6:00 pm">6:00 pm</option>
+                <option value="7:00 pm">7:00 pm</option>
+                <option value="8:00 pm">8:00 pm</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-12">
+              <button id="btn-agendar" class="btn-agenda-asesor bg-secundario" type="submit">Agendar mi reunion</button>
+            </div>
+          </form>
+          <div id="response-agenda" class="response-email">
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- redes sociales -->
+  <div class="section-redes-socials">
+
+    <div actived="true" class="box-social cursor-pointer" id="volume-master-video">
+      <ion-icon name="volume-high"></ion-icon>
+    </div>
+    <a target="_blank" href="https://www.facebook.com/qhawanacasasdecampo" class="box-social"><ion-icon
+        name="logo-facebook"></ion-icon></a>
+    <a target="_blank" href="https://wa.link/m440kr" class="box-social"><ion-icon name="logo-whatsapp"></ion-icon></a>
+    <a target="_blank" href="https://www.instagram.com/qhawana_condominio/" class="box-social"><ion-icon
+        name="logo-instagram"></ion-icon></a>
+  </div>
+
+  <!-- -------  inicio de qhawana -------------- -->
+  <!-- <div class="portada-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide portada">
+          <img loading="lazy" src="img/10-7.png" alt="" />
+        </div>
+        <div class="swiper-slide portada">
+          <img loading="lazy" src="img/10-2.jpg" alt="" />
+        </div>
+        <div class="swiper-slide portada">
+          <img loading="lazy" src="img/10-3.jpg" alt="" />
+        </div>
+        <div class="swiper-slide portada">
+          <img loading="lazy" src="img/10-4.png" alt="" />
+        </div>
+        <div class="swiper-slide portada">
+          <img loading="lazy" src="img/10-5.jpeg" alt="" />
+        </div>
+        <div class="swiper-slide portada">
+          <img loading="lazy" src="img/10-6.jpeg" alt="" />
+        </div>
+      </div>
+
+      <div class="content-text-portada container-qh">
+        <div class="col col-lg-12 mg-qh-port">
+          <h1>Un regalo de la Naturaleza cerca de Tí</h1>
+          <p>
+            Condominio Exclusivo Tipo Club. <br />
+            A solo 20 min de la ciudad de Tarapoto
+          </p>
+          <button
+            type="button"
+            class="btn-portada bg-primario"
+            data-toggle="modal"
+            data-target="#exampleModal">
+            Ver video
+          </button>
+        </div>
+      </div>
+    </div> -->
+  <div id="video-portada" class="w-full relative  video-portada h-[100vh] overflow-hidden">
+    <video id="portada-intro" class="h-[100%] w-[100%] object-cover z-[1000] absolute top-0 left-0 right-0 bottom-0"
+      autoplay muted loop>
+      <source src="videos/portadavideo.mp4" type="">
+    </video>
+    <div class="z-[1800] absolute top-0 left-0 bottom-0 right-0 flex flex-col items-end justify-center ">
+      <div class="w-full h-[100%] items-center justify-end mb-[40px] flex flex-col">
+        <h1 class="text-white text-[40px] text-center font-bold">Un regalo de la Naturaleza</h1>
+        <h1 class="text-white text-[40px] text-center font-bold ">Cerca de tí
+          <p class="text-white text-[25px] text-center mt-4">
+            Condominio Exclusivo Tipo Club. <br />
+            A solo 15 min de la ciudad de Tarapoto
+          </p>
+          <button type="button" class="rounded-lg bg-[#043021] text-white py-2 px-4 mt-4 text-[14px]"
+            data-toggle="modal" data-target="#exampleModal">
+            Ver video
+          </button>
+
+      </div>
+      <div class="w-full">
+        <div class="max-w-5xl mx-auto flex items-end justify-center">
+          <div class="rounded-lg w-full max-w-[400px] p-6 bg-[#043021] flex flex-col items-center gap-1">
+            <p class="text-white font-bold text-[16px]">Precio desde</p>
+            <span class="text-white text-[25px] font-bold">$22,500</span>
+            <p class="text-white text-[14px]">Separa con S/300.00</p>
+            <a href="#page-contacto"
+              class="hover:text-[#164e3] text-[#164e3] rounded-full w-full p-[15px] flex items-center justify-center gap-4 bg-[#b6ffd4]">
+              <ion-icon class="text-[#164e3]" name="thumbs-up"></ion-icon>
+              <p class="text-[15px] font-bold text-center text-[#164e3]">Solicitar una cotización</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section description -->
+  <div class="w-full bg-[#0c2516] py-[20px]">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div class="w-full flex items-center p-[20px] gap-4">
+        <img src="img/terreno.png" alt="" class="w-[40px]">
+        <div>
+          <p class="text-white text-[16px]">Lotes desde</p>
+
+          <p class="text-white font-bold text-[25px]">300 m²</p>
+        </div>
+      </div>
+      <div class="w-full flex items-center p-[20px]  gap-4 border-y-2 lg:border-x-2 lg:border-y-0 border-[#b6ffd4]">
+        <img src="img/interes.png" alt="" class="w-[40px]">
+
+        <div>
+          <p class="text-white text-[16px]">Hasta</p>
+
+          <p class="text-white font-bold text-[25px]">24 meses</p>
+          <p class="text-white text-[16px]">Sin intereses</p>
+        </div>
+      </div>
+      <div class="w-full flex items-center p-[20px] gap-4">
+        <img src="img/financiamiento.png" alt="" class="w-[40px]">
+
+        <div>
+          <p class="text-white text-[16px]">Financiamiento</p>
+
+          <p class="text-white font-bold text-[25px]">Directo</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- section vistas -->
+  <div class="section-page bg-vistas">
+    <div class="header-section" data-aos="fade-up">
+      <img loading="lazy" src="img/icono_qhawana.png" alt="" />
+      <h3 class="section-name-index">
+        Vive sensaciones <b class="bold-qh">únicas</b> rodeados de naturaleza
+      </h3>
+      <span class="separator-title-section"></span>
+      <p class="section-desc-index">
+        ¡En Qhawana sabemos que lo más importante es el Futuro de tu Familia!
+        Adquiere hoy un activo inmobiliario y recupera tu inversión a mediano
+        plazo con la generación de rentas vacacionales
+      </p>
+    </div>
+    <div class="galeria-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide img-galeria" data-aos="fade-zoom">
+          <a href="images/001. Qwa_ingreso1.jpg" data-lightbox="image-1" data-title="My caption">
+            <img loading="lazy" src="images/001. Qwa_ingreso1.jpg" alt="" />
+          </a>
+          <!-- <img src="img/portada1.jpg" alt="" /> -->
+        </div>
+        <div class="swiper-slide img-galeria" data-aos="zoom-in">
+          <a href="images/002. Qwa_ingreso2.jpg" data-lightbox="image-1" data-title="My caption">
+            <img loading="lazy" src="images/002. Qwa_ingreso2.jpg" alt="" />
+          </a>
+          <!-- <img src="img/portada1.jpg" alt="" /> -->
+        </div>
+        <div class="swiper-slide img-galeria" data-aos="zoom-in">
+          <a href="images/003. Qwa_ClubHuose_01.jpg" data-lightbox="image-1" data-title="My caption">
+            <img loading="lazy" src="images/003. Qwa_ClubHuose_01.jpg" alt="" />
+          </a>
+          <!-- <img src="img/portada1.jpg" alt="" /> -->
+        </div>
+        <div class="swiper-slide img-galeria" data-aos="zoom-in">
+          <a href="images/004. Qwa_ClubHuose_02.jpg" data-lightbox="image-1" data-title="My caption">
+            <img loading="lazy" src="images/004. Qwa_ClubHuose_02.jpg" alt="" />
+          </a>
+          <!-- <img src="img/portada1.jpg" alt="" /> -->
+        </div>
+        <div class="swiper-slide img-galeria" data-aos="zoom-in">
+          <a href="images/005. Qwa_ClubHuose_03.jpg" data-lightbox="image-1" data-title="My caption">
+            <img loading="lazy" src="images/005. Qwa_ClubHuose_03.jpg" alt="" />
+          </a>
+          <!-- <img src="img/portada1.jpg" alt="" /> -->
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <!-- fin de inicio de qhawana -->
+  <div id="page-about-qhawana" class="section-page bg-about bg-[#fff]">
+    <div class="row row_qh">
+      <div class="col-lg-6">
+        <div class="swiper mirador-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide img-galeria" data-aos="zoom-in">
+              <div class="overlay-page"></div>
+              <img class="overlay-img" src="images/modelocasas/CT1_001.jpg" alt="" />
+              <!-- <div class="content-text" data-aos="fade-left">
+                <h2>Qhawana es la oportunidad de Inversion que esperabas,</h2>
+                <p>no lo pienses mas tu familia lo agaradecera</p>
+              </div> -->
+            </div>
+            <div class="swiper-slide img-galeria" data-aos="zoom-in">
+              <div class="overlay-page"></div>
+              <img class="overlay-img" src="images/modelocasas/CT1_002.jpg" alt="" />
+              <!-- <div class="content-text" data-aos="fade-left">
+                <h2>Qhawana es la oportunidad de Inversion que esperabas,</h2>
+                <p>no lo pienses mas tu familia lo agaradecera</p>
+              </div> -->
+            </div>
+            <div class="swiper-slide img-galeria" data-aos="zoom-in">
+              <div class="overlay-page"></div>
+              <img class="overlay-img" src="images/modelocasas/CT1_003.jpg" alt="" />
+              <!-- <div class="content-text" data-aos="fade-left">
+                <h2>Qhawana es la oportunidad de Inversion que esperabas,</h2>
+                <p>no lo pienses mas tu familia lo agaradecera</p>
+              </div> -->
+            </div>
+            <div class="swiper-slide img-galeria" data-aos="zoom-in">
+              <div class="overlay-page"></div>
+              <img class="overlay-img" src="images/modelocasas/CT1_004.jpg" alt="" />
+              <!-- <div class="content-text" data-aos="fade-left">
+                <h2>Qhawana es la oportunidad de Inversion que esperabas,</h2>
+                <p>no lo pienses mas tu familia lo agaradecera</p>
+              </div> -->
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="mt-[20px]">
+          <b class="font-bold text-[20px]">Lotes para Casas de Campo de
+            m2.</b>
+        </div>
+        <h3 class="section-name-index">
+          <b class="bold-qh">300m2 desde US$ 75.00 el
+            m2.</b>
+        </h3>
+        <span class="separator-title-section"></span>
+      </div>
+      <div class="col-lg-6" style="padding: 20px !important;">
+        <p class="texto-small-qh" data-aos="fade-left">Qhawana Condominio Ecológico, es un
+          proyecto que estará compuesto por 150 lotes de 300m2 cada uno, los
+          cuales estarán ubicados de manera estratégica para disfrutar de
+          todas sus amenidades y espacios verdes que los rodean. <br> <br>
+          Este Condominio Vacacional esta conceptualizado para generar
+          rentas vacacionales, para brindar comodidad, privacidad, deleite,
+          placer a sus propietarios y visitantes, es una propuesta única
+          donde podrás construir la casa de campo de tus sueños para vivir,
+          vacacionar o generar rentas, gozando de una hermosa vista hacia el
+          Valle de Tarapoto y hacia el Valle del Rio Mayo. <br> <br>
+          Se trata de una Habilitación Urbana Residencial Tipo Club,
+          ofrecemos lotes Bien Futuro acondicionados con servicios de luz y
+          agua, con inscripción a registros públicos, terrenos en condición
+          de urbanos, complementados con amenidades que permitirán tener
+          experiencias únicas a sus visitantes.
+          Entre sus principales amenidades tenemos Club House, Gimnasio,
+          Canchas de Fulbito, Tenis, Parques, Capilla, Malocas, Zonas de
+          Coworking, Minimarket, Restaurante, Piscina vista infinita, etc
+          con servicios de seguridad las 24 horas, limpieza, Check-in,
+          Check-out y mucho más.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- section amenidades change  -->
+  <div class="section-page bg-amenidades" id="page-amenidades">
+    <div class="header-section" data-aos="fade-up">
+      <img loading="lazy" src="img/icono_qhawana.png" alt="" />
+      <h3 class="section-name-index">
+        ¿Por qué Qhawana es la <b class="bold-qh">mejor decisión?</b>
+      </h3>
+      <span class="separator-title-section"></span>
+      <p class="section-desc-index">
+        Somos un <b class="bold-color-qh">Condominio Vacacional Exclusivo Tipo Club</b>
+        , con amenidades que te permitirán vivir experiencias
+        inolvidables.
+      </p>
+    </div>
+    <div class="amenidades-list grid-4-column container-qh">
+      <div class="box-icon" data-aos="zoom-in">
+        <img loading="lazy" class="icon" src="icons/amenidades/003-student.png" alt="" />
+        <p class="description-box-icon" data-aos="zoom-in">
+          Zona de <b class="bold-color-qh">coworking</b>
+        </p>
+      </div>
+      <div class="box-icon" data-aos="zoom-in">
+        <img loading="lazy" class="icon" src="icons/amenidades/003-student.png" alt="" />
+        <p class="description-box-icon" data-aos="zoom-in">
+          Salón de <b class="bold-color-qh">Eventos</b>
+        </p>
+      </div>
+      <div class="box-icon" data-aos="zoom-in">
+        <img loading="lazy" class="icon" src="icons/amenidades/001-golf-club.png" alt="" />
+        <p class="description-box-icon" data-aos="zoom-in">
+          Club <b class="bold-color-qh">House</b>
+        </p>
+      </div>
+      <div class="box-icon" data-aos="zoom-in">
+        <img loading="lazy" class="icon" src="icons/amenidades/003-cancha-de-futbol.png" alt="" />
+        <p class="description-box-icon" data-aos="zoom-in">
+          Zona <b class="bold-color-qh">Deportiva</b>
+        </p>
+      </div>
+      <div class="box-icon" data-aos="zoom-in">
+        <img loading="lazy" class="icon" src="icons/amenidades/004-estanque.png" alt="" />
+        <p class="description-box-icon" data-aos="zoom-in">
+          Laguna <b class="bold-color-qh">Artifical</b>
+        </p>
+      </div>
+      <div class="box-icon" data-aos="zoom-in">
+        <img loading="lazy" class="icon" src="icons/amenidades/005-patio-de-recreo.png" alt="" />
+        <p class="description-box-icon" data-aos="zoom-in">
+          Juegos para <b class="bold-color-qh">niños</b>
+        </p>
+      </div>
+      <div class="box-icon" data-aos="zoom-in">
+        <img loading="lazy" class="icon" src="icons/amenidades/006-masaje-corporal.png" alt="" />
+        <p class="description-box-icon" data-aos="zoom-in">
+          Espacios de <b class="bold-color-qh">relajación</b>
+        </p>
+      </div>
+      <div class="box-icon" data-aos="zoom-in">
+        <img loading="lazy" class="icon" src="icons/amenidades/007-patinete.png" alt="" />
+        <p class="description-box-icon" data-aos="zoom-in">
+          Espacios <b class="bold-color-qh">recreativos</b>
+        </p>
+      </div>
+      <div class="box-icon" data-aos="zoom-in">
+        <img loading="lazy" class="icon" src="icons/amenidades/008-carrito-de-compras.png" alt="" />
+        <p class="description-box-icon" data-aos="zoom-in">
+          Minimarket <b class="bold-color-qh"></b>
+        </p>
+      </div>
+      <div class="box-icon" data-aos="zoom-in">
+        <img loading="lazy" class="icon" src="icons/amenidades/009-parrilla.png" alt="" />
+        <p class="description-box-icon" data-aos="zoom-in">
+          Zona de <b class="bold-color-qh">parrillas</b>
+        </p>
+      </div>
+      <div class="box-icon" data-aos="zoom-in">
+        <img loading="lazy" class="icon" src="icons/amenidades/010-piscina.png" alt="" />
+        <p class="description-box-icon" data-aos="zoom-in">
+          Piscina con <b class="bold-color-qh">vista infinita</b>
+        </p>
+      </div>
+      <div class="box-icon" data-aos="zoom-in">
+        <img loading="lazy" class="icon" src="icons/amenidades/011-parque.png" alt="" />
+        <p class="description-box-icon" data-aos="zoom-in">
+          Parques y <b class="bold-color-qh">paseos</b>
+        </p>
+      </div>
+      <div class="box-icon" data-aos="zoom-in">
+        <img loading="lazy" class="icon" src="icons/amenidades/013-restaurante.png" alt="" />
+        <p class="description-box-icon" data-aos="zoom-in">
+          Restaurante <b class="bold-color-qh"></b>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- slider informativo -->
+  <div class="bg-mirador">
+    <div class="swiper mirador-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide img-galeria" data-aos="zoom-in">
+          <div class="overlay-page"></div>
+          <img class="overlay-img" src="img/img-banners/1.png" alt="" />
+          <!-- <div class="content-text" data-aos="fade-left">
+              <h2>Qhawana es la oportunidad de Inversion que esperabas,</h2>
+              <p>no lo pienses mas tu familia lo agaradecera</p>
+            </div> -->
+        </div>
+        <div class="swiper-slide img-galeria" data-aos="zoom-in">
+          <div class="overlay-page"></div>
+          <img class="overlay-img" src="img/img-banners/2.png" alt="" />
+          <!-- <div class="content-text" data-aos="fade-left">
+              <h2>Qhawana es la oportunidad de Inversion que esperabas,</h2>
+              <p>no lo pienses mas tu familia lo agaradecera</p>
+            </div> -->
+        </div>
+        <div class="swiper-slide img-galeria" data-aos="zoom-in">
+          <div class="overlay-page"></div>
+          <img class="overlay-img" src="img/img-banners/3.png" alt="" />
+          <!-- <div class="content-text" data-aos="fade-left">
+              <h2>Qhawana es la oportunidad de Inversion que esperabas,</h2>
+              <p>no lo pienses mas tu familia lo agaradecera</p>
+            </div> -->
+        </div>
+        <div class="swiper-slide img-galeria" data-aos="zoom-in">
+          <div class="overlay-page"></div>
+          <img class="overlay-img" src="img/img-banners/4.png" alt="" />
+          <!-- <div class="content-text" data-aos="fade-left">
+              <h2>Qhawana es la oportunidad de Inversion que esperabas,</h2>
+              <p>no lo pienses mas tu familia lo agaradecera</p>
+            </div> -->
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+
+  <!-- section vista aerea del proyecto info -->
+  <!-- <div class="section-page bg-espacios-condominio" id="page-proyeccion">
+        <div class="header-section" data-aos="fade-up">
+          <img loading="lazy" src="img/icono_qhawana.png" alt="" />
+          <h3 class="section-name-index">
+            <b class="bold-qh">Proyección</b> del proyecto <br />
+            Qhawana
+          </h3>
+          <span class="separator-title-section"></span>
+        </div>
+        <div class="row moreinfo-description container-qh">
+          <div class="col-lg-12 bloque-qhawana">
+            <div class="moreinfo-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide img-galeria" data-aos="zoom-in">
+                  <div class="content-info">
+                    <h3 class="text-[14px]">Vista Aérea del Proyecto</h3>
+                  </div>
+
+                  <img loading="lazy" src="img/renders/02.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide img-galeria" data-aos="zoom-in">
+                  <div class="content-info">
+                    <h3 class="text-[14px]">Vista de la Sala Comedor</h3>
+                  </div>
+
+                  <img loading="lazy" src="img/10-2.jpg" alt="" />
+                </div>
+                <div class="swiper-slide img-galeria" data-aos="zoom-in">
+                  <div class="content-info">
+                    <h3 class="text-[14px]">Vista de una habitación</h3>
+                  </div>
+
+                  <img loading="lazy" src="img/10-3.jpg" alt="" />
+                </div>
+                <div class="swiper-slide img-galeria" data-aos="zoom-in">
+                  <div class="content-info">
+                    <h3 class="text-[14px]">Vista del ingreso al restaurante</h3>
+                  </div>
+
+                  <img loading="lazy" src="img/10-4.png" alt="" />
+                </div>
+                <div class="swiper-slide img-galeria" data-aos="zoom-in">
+                  <div class="content-info">
+                    <h3 class="text-[14px]">Vista del Club House</h3>
+                  </div>
+
+                  <img loading="lazy" src="img/10-5.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide img-galeria" data-aos="zoom-in">
+                  <div class="content-info">
+                    <h3 class="text-[14px]">Vista panorámica del Restaurante - Piscina</h3>
+                  </div>
+
+                  <img loading="lazy" src="img/10-6.jpeg" alt="" />
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="col-lg-12 mt-4">
+              <a href="#page-contacto" class="btn-info-qhawana">Conocer Qhawana
+                <ion-icon name="paper-plane"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+  <!-- section proyecto entregable -->
+  <div class="section-page bg-proyeccion container-qh" id="page-proyeccion">
+
+    <div class="header-section" data-aos="fade-up">
+      <img loading="lazy" src="img/icono_qhawana.png" alt="" />
+      <h3 class="section-name-index">
+        Entregables del <b class="bold-qh">Proyecto</b>
+      </h3>
+      <span class="separator-title-section"></span>
+      <p class="section-desc-index">
+        Te entregaremos un
+        <b class="bold-color-qh">activo inmobiliario</b> que permitirá una
+        constante revalorización de tu Inversión
+      </p>
+    </div>
+    <div class="entregable-list grid-2-column">
+      <div class="item-card" data-aos="fade-up">
+        <span class="number-item">01</span>
+        <p class="description-item">
+          Entregamos un Condominio Vacacional, categorizado como una
+          Habilitación Urbana Residencial Tipo Club
+        </p>
+      </div>
+      <div class="item-card" data-aos="fade-up">
+        <span class="number-item">02</span>
+        <p class="description-item">
+          Lotes de Terreno acondicionados con puntos de energía eléctrica y
+          pozos de agua(subterráneo).
+        </p>
+      </div>
+      <div class="item-card" data-aos="fade-up">
+        <span class="number-item">03</span>
+        <p class="description-item">
+          Entregamos lotes independizados e inscritos en registros públicos.
+        </p>
+      </div>
+      <div class="item-card" data-aos="fade-up">
+        <span class="number-item">04</span>
+        <p class="description-item">Terrenos en condición de uso urbano.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- zonas de qhawana -->
+
+  <div class="section-page bg-brochure" id="page-zonas">
+    <div class="header-section" data-aos="fade-up">
+      <img src="img/icono_qhawana.png" alt="" />
+      <h3 class="section-name-index">
+        <b class="bold-qh"> Zonas</b> del Proyecto
+      </h3>
+      <span class="separator-title-section"></span>
+    </div>
+    <div class="row_qh">
+      <!-- <div class="swiper brochure-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a
+                  href="img/brochure_qhawana.jpg"
+                  data-lightbox="Brochure Ubicacion"
+                  data-title="Brochure Ubicacion"><img
+                    width="100%"
+                    src="img/brochure_qhawana.jpg"
+                    alt=""
+                    class="img-back-t"
+                    /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="img/brochure_qhawana-02.jpg"
+                  data-lightbox="Brochure Ubicacion"
+                  data-title="Brochure Ubicacion"><img
+                    width="100%"
+                    src="img/brochure_qhawana-02.jpg"
+                    alt=""
+                    class="img-back-t"
+                    /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="img/brochure_qhawana-03.jpg"
+                  data-lightbox="Brochure Ubicacion"
+                  data-title="Brochure Ubicacion"><img
+                    width="100%"
+                    src="img/brochure_qhawana-03.jpg"
+                    alt=""
+                    class="img-back-t"
+                    /></a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper brochure-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a
+                  href="img/brochure_qhawana-04.jpg"
+                  data-lightbox="Brochure Ubicacion"
+                  data-title="Brochure Ubicacion"><img
+                    width="100%"
+                    src="img/brochure_qhawana-04.jpg"
+                    alt=""
+                    class="img-back-t"
+                    /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="img/brochure_qhawana-05.jpg"
+                  data-lightbox="Brochure Ubicacion"
+                  data-title="Brochure Ubicacion"><img
+                    width="100%"
+                    src="img/brochure_qhawana-05.jpg"
+                    alt=""
+                    class="img-back-t"
+                    /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="img/brochure_qhawana-06.jpg"
+                  data-lightbox="Brochure Ubicacion"
+                  data-title="Brochure Ubicacion"><img
+                    width="100%"
+                    src="img/brochure_qhawana-06.jpg"
+                    alt=""
+                    class="img-back-t"
+                    /></a>
+              </div>
+              <div class="swiper-slide">
+                <a
+                  href="img/brochure_qhawana-07.jpg"
+                  data-lightbox="Brochure Ubicacion"
+                  data-title="Brochure Ubicacion"><img
+                    width="100%"
+                    src="img/brochure_qhawana-07.jpg"
+                    alt=""
+                    class="img-back-t"
+                    /></a>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div> -->
+    </div>
+    <div class="download-files">
+      <a target="_blank" href="ficha-tecnica/" class="btn-info-qhawana">
+        <ion-icon name="document"></ion-icon> Ver Ficha Técnica</a>
+    </div>
+  </div>
+  <!-- sectioin reels de instagram -->
+  <div class="section-page bg-reels">
+    <div class="header-section" data-aos="fade-up">
+      <img loading="lazy" src="img/icono_qhawana.png" alt="" />
+      <h3 class="section-name-index">
+        <b class="bold-qh">Conoce </b> un poco más de nosotros
+      </h3>
+      <p class="section-desc-index">Visita nuestras redes sociales</p>
+      <span class="separator-title-section"></span>
+    </div>
+    <div class="listing-reels">
+      <div class="swiper reel-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <blockquote class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/p/Chd-DSKM_fL/?utm_source=ig_embed&amp;utm_campaign=loading"
+              data-instgrm-version="14" style="
+                  background: #fff;
+                  border: 0;
+                  border-radius: 3px;
+                  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5),
+                  0 1px 10px 0 rgba(0, 0, 0, 0.15);
+                  margin: 1px;
+                  max-width: 540px;
+                  padding: 0;
+                  width: 100%;
+                  width: -webkit-calc(100% - 2px);
+                  width: calc(100% - 2px);
+                  ">
+              <div style="padding: 16px">
+                <a href="https://www.instagram.com/p/Chd-DSKM_fL/?utm_source=ig_embed&amp;utm_campaign=loading" style="
+                      background: #ffffff;
+                      line-height: 0;
+                      padding: 0 0;
+                      text-align: center;
+                      text-decoration: none;
+                      width: 100%;
+                      " target="_blank">
+                  <div style="
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        ">
+                    <div style="
+                          background-color: #f4f4f4;
+                          border-radius: 50%;
+                          flex-grow: 0;
+                          height: 40px;
+                          margin-right: 14px;
+                          width: 40px;
+                          "></div>
+                    <div style="
+                          display: flex;
+                          flex-direction: column;
+                          flex-grow: 1;
+                          justify-content: center;
+                          ">
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 4px;
+                            flex-grow: 0;
+                            height: 14px;
+                            margin-bottom: 6px;
+                            width: 100px;
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 4px;
+                            flex-grow: 0;
+                            height: 14px;
+                            width: 60px;
+                            "></div>
+                    </div>
+                  </div>
+                  <div style="padding: 19% 0"></div>
+                  <div style="
+                        display: block;
+                        height: 50px;
+                        margin: 0 auto 12px;
+                        width: 50px;
+                        ">
+                    <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                      xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                          <g>
+                            <path d="M556.869,30.41 C554.814,30.41
+                                  553.148,32.076 553.148,34.131 C553.148,36.186
+                                  554.814,37.852 556.869,37.852 C558.924,37.852
+                                  560.59,36.186 560.59,34.131 C560.59,32.076
+                                  558.924,30.41 556.869,30.41 M541,60.657
+                                  C535.114,60.657 530.342,55.887 530.342,50
+                                  C530.342,44.114 535.114,39.342 541,39.342
+                                  C546.887,39.342 551.658,44.114 551.658,50
+                                  C551.658,55.887 546.887,60.657 541,60.657
+                                  M541,33.886 C532.1,33.886 524.886,41.1
+                                  524.886,50 C524.886,58.899 532.1,66.113
+                                  541,66.113 C549.9,66.113 557.115,58.899
+                                  557.115,50 C557.115,41.1 549.9,33.886
+                                  541,33.886 M565.378,62.101 C565.244,65.022
+                                  564.756,66.606 564.346,67.663 C563.803,69.06
+                                  563.154,70.057 562.106,71.106 C561.058,72.155
+                                  560.06,72.803 558.662,73.347 C557.607,73.757
+                                  556.021,74.244 553.102,74.378 C549.944,74.521
+                                  548.997,74.552 541,74.552 C533.003,74.552
+                                  532.056,74.521 528.898,74.378 C525.979,74.244
+                                  524.393,73.757 523.338,73.347 C521.94,72.803
+                                  520.942,72.155 519.894,71.106 C518.846,70.057
+                                  518.197,69.06 517.654,67.663 C517.244,66.606
+                                  516.755,65.022 516.623,62.101 C516.479,58.943
+                                  516.448,57.996 516.448,50 C516.448,42.003
+                                  516.479,41.056 516.623,37.899 C516.755,34.978
+                                  517.244,33.391 517.654,32.338 C518.197,30.938
+                                  518.846,29.942 519.894,28.894 C520.942,27.846
+                                  521.94,27.196 523.338,26.654 C524.393,26.244
+                                  525.979,25.756 528.898,25.623 C532.057,25.479
+                                  533.004,25.448 541,25.448 C548.997,25.448
+                                  549.943,25.479 553.102,25.623 C556.021,25.756
+                                  557.607,26.244 558.662,26.654 C560.06,27.196
+                                  561.058,27.846 562.106,28.894 C563.154,29.942
+                                  563.803,30.938 564.346,32.338 C564.756,33.391
+                                  565.244,34.978 565.378,37.899 C565.522,41.056
+                                  565.552,42.003 565.552,50 C565.552,57.996
+                                  565.522,58.943 565.378,62.101 M570.82,37.631
+                                  C570.674,34.438 570.167,32.258 569.425,30.349
+                                  C568.659,28.377 567.633,26.702 565.965,25.035
+                                  C564.297,23.368 562.623,22.342 560.652,21.575
+                                  C558.743,20.834 556.562,20.326 553.369,20.18
+                                  C550.169,20.033 549.148,20 541,20 C532.853,20
+                                  531.831,20.033 528.631,20.18 C525.438,20.326
+                                  523.257,20.834 521.349,21.575 C519.376,22.342
+                                  517.703,23.368 516.035,25.035 C514.368,26.702
+                                  513.342,28.377 512.574,30.349 C511.834,32.258
+                                  511.326,34.438 511.181,37.631 C511.035,40.831
+                                  511,41.851 511,50 C511,58.147 511.035,59.17
+                                  511.181,62.369 C511.326,65.562 511.834,67.743
+                                  512.574,69.651 C513.342,71.625 514.368,73.296
+                                  516.035,74.965 C517.703,76.634 519.376,77.658
+                                  521.349,78.425 C523.257,79.167 525.438,79.673
+                                  528.631,79.82 C531.831,79.965 532.853,80.001
+                                  541,80.001 C549.148,80.001 550.169,79.965
+                                  553.369,79.82 C556.562,79.673 558.743,79.167
+                                  560.652,78.425 C562.623,77.658 564.297,76.634
+                                  565.965,74.965 C567.633,73.296 568.659,71.625
+                                  569.425,69.651 C570.167,67.743 570.674,65.562
+                                  570.82,62.369 C570.966,59.17 571,58.147 571,50
+                                  C571,41.851 570.966,40.831 570.82,37.631"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div style="padding-top: 8px">
+                    <div style="
+                          color: #3897f0;
+                          font-family: Arial, sans-serif;
+                          font-size: 14px;
+                          font-style: normal;
+                          font-weight: 550;
+                          line-height: 18px;
+                          ">
+                      Ver esta publicación en Instagram
+                    </div>
+                  </div>
+                  <div style="padding: 12.5% 0"></div>
+                  <div style="
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 14px;
+                        align-items: center;
+                        ">
+                    <div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            height: 12.5px;
+                            width: 12.5px;
+                            transform: translateX(0px) translateY(7px);
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            height: 12.5px;
+                            transform: rotate(-45deg) translateX(3px)
+                            translateY(1px);
+                            width: 12.5px;
+                            flex-grow: 0;
+                            margin-right: 14px;
+                            margin-left: 2px;
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            height: 12.5px;
+                            width: 12.5px;
+                            transform: translateX(9px) translateY(-18px);
+                            "></div>
+                    </div>
+                    <div style="margin-left: 8px">
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            flex-grow: 0;
+                            height: 20px;
+                            width: 20px;
+                            "></div>
+                      <div style="
+                            width: 0;
+                            height: 0;
+                            border-top: 2px solid transparent;
+                            border-left: 6px solid #f4f4f4;
+                            border-bottom: 2px solid transparent;
+                            transform: translateX(16px) translateY(-4px)
+                            rotate(30deg);
+                            "></div>
+                    </div>
+                    <div style="margin-left: auto">
+                      <div style="
+                            width: 0px;
+                            border-top: 8px solid #f4f4f4;
+                            border-right: 8px solid transparent;
+                            transform: translateY(16px);
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            flex-grow: 0;
+                            height: 12px;
+                            width: 16px;
+                            transform: translateY(-4px);
+                            "></div>
+                      <div style="
+                            width: 0;
+                            height: 0;
+                            border-top: 8px solid #f4f4f4;
+                            border-left: 8px solid transparent;
+                            transform: translateY(-4px) translateX(8px);
+                            "></div>
+                    </div>
+                  </div>
+                  <div style="
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        justify-content: center;
+                        margin-bottom: 24px;
+                        ">
+                    <div style="
+                          background-color: #f4f4f4;
+                          border-radius: 4px;
+                          flex-grow: 0;
+                          height: 14px;
+                          margin-bottom: 6px;
+                          width: 224px;
+                          "></div>
+                    <div style="
+                          background-color: #f4f4f4;
+                          border-radius: 4px;
+                          flex-grow: 0;
+                          height: 14px;
+                          width: 144px;
+                          "></div>
+                  </div>
+                </a>
+                <p style="
+                      color: #c9c8cd;
+                      font-family: Arial, sans-serif;
+                      font-size: 14px;
+                      line-height: 17px;
+                      margin-bottom: 0;
+                      margin-top: 8px;
+                      overflow: hidden;
+                      padding: 8px 0 7px;
+                      text-align: center;
+                      text-overflow: ellipsis;
+                      white-space: nowrap;
+                      ">
+                  <a href="https://www.instagram.com/p/Chd-DSKM_fL/?utm_source=ig_embed&amp;utm_campaign=loading" style="
+                        color: #c9c8cd;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: normal;
+                        line-height: 17px;
+                        text-decoration: none;
+                        " target="_blank">Una publicación compartida de Qhawana
+                    Condominio
+                    Ecológico (@qhawana_condominio)</a>
+                </p>
+              </div>
+            </blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
+          </div>
+          <div class="swiper-slide">
+            <blockquote class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/p/Chd9vIvs_9W/?utm_source=ig_embed&amp;utm_campaign=loading"
+              data-instgrm-version="14" style="
+                  background: #fff;
+                  border: 0;
+                  border-radius: 3px;
+                  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5),
+                  0 1px 10px 0 rgba(0, 0, 0, 0.15);
+                  margin: 1px;
+                  max-width: 540px;
+                  padding: 0;
+                  width: 100%;
+                  width: -webkit-calc(100% - 2px);
+                  width: calc(100% - 2px);
+                  ">
+              <div style="padding: 16px">
+                <a href="https://www.instagram.com/p/Chd9vIvs_9W/?utm_source=ig_embed&amp;utm_campaign=loading" style="
+                      background: #ffffff;
+                      line-height: 0;
+                      padding: 0 0;
+                      text-align: center;
+                      text-decoration: none;
+                      width: 100%;
+                      " target="_blank">
+                  <div style="
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        ">
+                    <div style="
+                          background-color: #f4f4f4;
+                          border-radius: 50%;
+                          flex-grow: 0;
+                          height: 40px;
+                          margin-right: 14px;
+                          width: 40px;
+                          "></div>
+                    <div style="
+                          display: flex;
+                          flex-direction: column;
+                          flex-grow: 1;
+                          justify-content: center;
+                          ">
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 4px;
+                            flex-grow: 0;
+                            height: 14px;
+                            margin-bottom: 6px;
+                            width: 100px;
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 4px;
+                            flex-grow: 0;
+                            height: 14px;
+                            width: 60px;
+                            "></div>
+                    </div>
+                  </div>
+                  <div style="padding: 19% 0"></div>
+                  <div style="
+                        display: block;
+                        height: 50px;
+                        margin: 0 auto 12px;
+                        width: 50px;
+                        ">
+                    <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                      xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                          <g>
+                            <path d="M556.869,30.41 C554.814,30.41
+                                  553.148,32.076 553.148,34.131 C553.148,36.186
+                                  554.814,37.852 556.869,37.852 C558.924,37.852
+                                  560.59,36.186 560.59,34.131 C560.59,32.076
+                                  558.924,30.41 556.869,30.41 M541,60.657
+                                  C535.114,60.657 530.342,55.887 530.342,50
+                                  C530.342,44.114 535.114,39.342 541,39.342
+                                  C546.887,39.342 551.658,44.114 551.658,50
+                                  C551.658,55.887 546.887,60.657 541,60.657
+                                  M541,33.886 C532.1,33.886 524.886,41.1
+                                  524.886,50 C524.886,58.899 532.1,66.113
+                                  541,66.113 C549.9,66.113 557.115,58.899
+                                  557.115,50 C557.115,41.1 549.9,33.886
+                                  541,33.886 M565.378,62.101 C565.244,65.022
+                                  564.756,66.606 564.346,67.663 C563.803,69.06
+                                  563.154,70.057 562.106,71.106 C561.058,72.155
+                                  560.06,72.803 558.662,73.347 C557.607,73.757
+                                  556.021,74.244 553.102,74.378 C549.944,74.521
+                                  548.997,74.552 541,74.552 C533.003,74.552
+                                  532.056,74.521 528.898,74.378 C525.979,74.244
+                                  524.393,73.757 523.338,73.347 C521.94,72.803
+                                  520.942,72.155 519.894,71.106 C518.846,70.057
+                                  518.197,69.06 517.654,67.663 C517.244,66.606
+                                  516.755,65.022 516.623,62.101 C516.479,58.943
+                                  516.448,57.996 516.448,50 C516.448,42.003
+                                  516.479,41.056 516.623,37.899 C516.755,34.978
+                                  517.244,33.391 517.654,32.338 C518.197,30.938
+                                  518.846,29.942 519.894,28.894 C520.942,27.846
+                                  521.94,27.196 523.338,26.654 C524.393,26.244
+                                  525.979,25.756 528.898,25.623 C532.057,25.479
+                                  533.004,25.448 541,25.448 C548.997,25.448
+                                  549.943,25.479 553.102,25.623 C556.021,25.756
+                                  557.607,26.244 558.662,26.654 C560.06,27.196
+                                  561.058,27.846 562.106,28.894 C563.154,29.942
+                                  563.803,30.938 564.346,32.338 C564.756,33.391
+                                  565.244,34.978 565.378,37.899 C565.522,41.056
+                                  565.552,42.003 565.552,50 C565.552,57.996
+                                  565.522,58.943 565.378,62.101 M570.82,37.631
+                                  C570.674,34.438 570.167,32.258 569.425,30.349
+                                  C568.659,28.377 567.633,26.702 565.965,25.035
+                                  C564.297,23.368 562.623,22.342 560.652,21.575
+                                  C558.743,20.834 556.562,20.326 553.369,20.18
+                                  C550.169,20.033 549.148,20 541,20 C532.853,20
+                                  531.831,20.033 528.631,20.18 C525.438,20.326
+                                  523.257,20.834 521.349,21.575 C519.376,22.342
+                                  517.703,23.368 516.035,25.035 C514.368,26.702
+                                  513.342,28.377 512.574,30.349 C511.834,32.258
+                                  511.326,34.438 511.181,37.631 C511.035,40.831
+                                  511,41.851 511,50 C511,58.147 511.035,59.17
+                                  511.181,62.369 C511.326,65.562 511.834,67.743
+                                  512.574,69.651 C513.342,71.625 514.368,73.296
+                                  516.035,74.965 C517.703,76.634 519.376,77.658
+                                  521.349,78.425 C523.257,79.167 525.438,79.673
+                                  528.631,79.82 C531.831,79.965 532.853,80.001
+                                  541,80.001 C549.148,80.001 550.169,79.965
+                                  553.369,79.82 C556.562,79.673 558.743,79.167
+                                  560.652,78.425 C562.623,77.658 564.297,76.634
+                                  565.965,74.965 C567.633,73.296 568.659,71.625
+                                  569.425,69.651 C570.167,67.743 570.674,65.562
+                                  570.82,62.369 C570.966,59.17 571,58.147 571,50
+                                  C571,41.851 570.966,40.831 570.82,37.631"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div style="padding-top: 8px">
+                    <div style="
+                          color: #3897f0;
+                          font-family: Arial, sans-serif;
+                          font-size: 14px;
+                          font-style: normal;
+                          font-weight: 550;
+                          line-height: 18px;
+                          ">
+                      Ver esta publicación en Instagram
+                    </div>
+                  </div>
+                  <div style="padding: 12.5% 0"></div>
+                  <div style="
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 14px;
+                        align-items: center;
+                        ">
+                    <div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            height: 12.5px;
+                            width: 12.5px;
+                            transform: translateX(0px) translateY(7px);
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            height: 12.5px;
+                            transform: rotate(-45deg) translateX(3px)
+                            translateY(1px);
+                            width: 12.5px;
+                            flex-grow: 0;
+                            margin-right: 14px;
+                            margin-left: 2px;
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            height: 12.5px;
+                            width: 12.5px;
+                            transform: translateX(9px) translateY(-18px);
+                            "></div>
+                    </div>
+                    <div style="margin-left: 8px">
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            flex-grow: 0;
+                            height: 20px;
+                            width: 20px;
+                            "></div>
+                      <div style="
+                            width: 0;
+                            height: 0;
+                            border-top: 2px solid transparent;
+                            border-left: 6px solid #f4f4f4;
+                            border-bottom: 2px solid transparent;
+                            transform: translateX(16px) translateY(-4px)
+                            rotate(30deg);
+                            "></div>
+                    </div>
+                    <div style="margin-left: auto">
+                      <div style="
+                            width: 0px;
+                            border-top: 8px solid #f4f4f4;
+                            border-right: 8px solid transparent;
+                            transform: translateY(16px);
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            flex-grow: 0;
+                            height: 12px;
+                            width: 16px;
+                            transform: translateY(-4px);
+                            "></div>
+                      <div style="
+                            width: 0;
+                            height: 0;
+                            border-top: 8px solid #f4f4f4;
+                            border-left: 8px solid transparent;
+                            transform: translateY(-4px) translateX(8px);
+                            "></div>
+                    </div>
+                  </div>
+                  <div style="
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        justify-content: center;
+                        margin-bottom: 24px;
+                        ">
+                    <div style="
+                          background-color: #f4f4f4;
+                          border-radius: 4px;
+                          flex-grow: 0;
+                          height: 14px;
+                          margin-bottom: 6px;
+                          width: 224px;
+                          "></div>
+                    <div style="
+                          background-color: #f4f4f4;
+                          border-radius: 4px;
+                          flex-grow: 0;
+                          height: 14px;
+                          width: 144px;
+                          "></div>
+                  </div>
+                </a>
+                <p style="
+                      color: #c9c8cd;
+                      font-family: Arial, sans-serif;
+                      font-size: 14px;
+                      line-height: 17px;
+                      margin-bottom: 0;
+                      margin-top: 8px;
+                      overflow: hidden;
+                      padding: 8px 0 7px;
+                      text-align: center;
+                      text-overflow: ellipsis;
+                      white-space: nowrap;
+                      ">
+                  <a href="https://www.instagram.com/p/Chd9vIvs_9W/?utm_source=ig_embed&amp;utm_campaign=loading" style="
+                        color: #c9c8cd;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: normal;
+                        line-height: 17px;
+                        text-decoration: none;
+                        " target="_blank">Una publicación compartida de Qhawana
+                    Condominio
+                    Ecológico (@qhawana_condominio)</a>
+                </p>
+              </div>
+            </blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
+          </div>
+          <div class="swiper-slide">
+            <blockquote class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/p/Chd2F6rs6zG/?utm_source=ig_embed&amp;utm_campaign=loading"
+              data-instgrm-version="14" style="
+                  background: #fff;
+                  border: 0;
+                  border-radius: 3px;
+                  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5),
+                  0 1px 10px 0 rgba(0, 0, 0, 0.15);
+                  margin: 1px;
+                  max-width: 540px;
+                  min-width: 326px;
+                  padding: 0;
+                  width: 99.375%;
+                  width: -webkit-calc(100% - 2px);
+                  width: calc(100% - 2px);
+                  ">
+              <div style="padding: 16px">
+                <a href="https://www.instagram.com/p/Chd2F6rs6zG/?utm_source=ig_embed&amp;utm_campaign=loading" style="
+                      background: #ffffff;
+                      line-height: 0;
+                      padding: 0 0;
+                      text-align: center;
+                      text-decoration: none;
+                      width: 100%;
+                      " target="_blank">
+                  <div style="
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        ">
+                    <div style="
+                          background-color: #f4f4f4;
+                          border-radius: 50%;
+                          flex-grow: 0;
+                          height: 40px;
+                          margin-right: 14px;
+                          width: 40px;
+                          "></div>
+                    <div style="
+                          display: flex;
+                          flex-direction: column;
+                          flex-grow: 1;
+                          justify-content: center;
+                          ">
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 4px;
+                            flex-grow: 0;
+                            height: 14px;
+                            margin-bottom: 6px;
+                            width: 100px;
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 4px;
+                            flex-grow: 0;
+                            height: 14px;
+                            width: 60px;
+                            "></div>
+                    </div>
+                  </div>
+                  <div style="padding: 19% 0"></div>
+                  <div style="
+                        display: block;
+                        height: 50px;
+                        margin: 0 auto 12px;
+                        width: 50px;
+                        ">
+                    <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                      xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                          <g>
+                            <path d="M556.869,30.41 C554.814,30.41
+                                  553.148,32.076 553.148,34.131 C553.148,36.186
+                                  554.814,37.852 556.869,37.852 C558.924,37.852
+                                  560.59,36.186 560.59,34.131 C560.59,32.076
+                                  558.924,30.41 556.869,30.41 M541,60.657
+                                  C535.114,60.657 530.342,55.887 530.342,50
+                                  C530.342,44.114 535.114,39.342 541,39.342
+                                  C546.887,39.342 551.658,44.114 551.658,50
+                                  C551.658,55.887 546.887,60.657 541,60.657
+                                  M541,33.886 C532.1,33.886 524.886,41.1
+                                  524.886,50 C524.886,58.899 532.1,66.113
+                                  541,66.113 C549.9,66.113 557.115,58.899
+                                  557.115,50 C557.115,41.1 549.9,33.886
+                                  541,33.886 M565.378,62.101 C565.244,65.022
+                                  564.756,66.606 564.346,67.663 C563.803,69.06
+                                  563.154,70.057 562.106,71.106 C561.058,72.155
+                                  560.06,72.803 558.662,73.347 C557.607,73.757
+                                  556.021,74.244 553.102,74.378 C549.944,74.521
+                                  548.997,74.552 541,74.552 C533.003,74.552
+                                  532.056,74.521 528.898,74.378 C525.979,74.244
+                                  524.393,73.757 523.338,73.347 C521.94,72.803
+                                  520.942,72.155 519.894,71.106 C518.846,70.057
+                                  518.197,69.06 517.654,67.663 C517.244,66.606
+                                  516.755,65.022 516.623,62.101 C516.479,58.943
+                                  516.448,57.996 516.448,50 C516.448,42.003
+                                  516.479,41.056 516.623,37.899 C516.755,34.978
+                                  517.244,33.391 517.654,32.338 C518.197,30.938
+                                  518.846,29.942 519.894,28.894 C520.942,27.846
+                                  521.94,27.196 523.338,26.654 C524.393,26.244
+                                  525.979,25.756 528.898,25.623 C532.057,25.479
+                                  533.004,25.448 541,25.448 C548.997,25.448
+                                  549.943,25.479 553.102,25.623 C556.021,25.756
+                                  557.607,26.244 558.662,26.654 C560.06,27.196
+                                  561.058,27.846 562.106,28.894 C563.154,29.942
+                                  563.803,30.938 564.346,32.338 C564.756,33.391
+                                  565.244,34.978 565.378,37.899 C565.522,41.056
+                                  565.552,42.003 565.552,50 C565.552,57.996
+                                  565.522,58.943 565.378,62.101 M570.82,37.631
+                                  C570.674,34.438 570.167,32.258 569.425,30.349
+                                  C568.659,28.377 567.633,26.702 565.965,25.035
+                                  C564.297,23.368 562.623,22.342 560.652,21.575
+                                  C558.743,20.834 556.562,20.326 553.369,20.18
+                                  C550.169,20.033 549.148,20 541,20 C532.853,20
+                                  531.831,20.033 528.631,20.18 C525.438,20.326
+                                  523.257,20.834 521.349,21.575 C519.376,22.342
+                                  517.703,23.368 516.035,25.035 C514.368,26.702
+                                  513.342,28.377 512.574,30.349 C511.834,32.258
+                                  511.326,34.438 511.181,37.631 C511.035,40.831
+                                  511,41.851 511,50 C511,58.147 511.035,59.17
+                                  511.181,62.369 C511.326,65.562 511.834,67.743
+                                  512.574,69.651 C513.342,71.625 514.368,73.296
+                                  516.035,74.965 C517.703,76.634 519.376,77.658
+                                  521.349,78.425 C523.257,79.167 525.438,79.673
+                                  528.631,79.82 C531.831,79.965 532.853,80.001
+                                  541,80.001 C549.148,80.001 550.169,79.965
+                                  553.369,79.82 C556.562,79.673 558.743,79.167
+                                  560.652,78.425 C562.623,77.658 564.297,76.634
+                                  565.965,74.965 C567.633,73.296 568.659,71.625
+                                  569.425,69.651 C570.167,67.743 570.674,65.562
+                                  570.82,62.369 C570.966,59.17 571,58.147 571,50
+                                  C571,41.851 570.966,40.831 570.82,37.631"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div style="padding-top: 8px">
+                    <div style="
+                          color: #3897f0;
+                          font-family: Arial, sans-serif;
+                          font-size: 14px;
+                          font-style: normal;
+                          font-weight: 550;
+                          line-height: 18px;
+                          ">
+                      Ver esta publicación en Instagram
+                    </div>
+                  </div>
+                  <div style="padding: 12.5% 0"></div>
+                  <div style="
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 14px;
+                        align-items: center;
+                        ">
+                    <div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            height: 12.5px;
+                            width: 12.5px;
+                            transform: translateX(0px) translateY(7px);
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            height: 12.5px;
+                            transform: rotate(-45deg) translateX(3px)
+                            translateY(1px);
+                            width: 12.5px;
+                            flex-grow: 0;
+                            margin-right: 14px;
+                            margin-left: 2px;
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            height: 12.5px;
+                            width: 12.5px;
+                            transform: translateX(9px) translateY(-18px);
+                            "></div>
+                    </div>
+                    <div style="margin-left: 8px">
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            flex-grow: 0;
+                            height: 20px;
+                            width: 20px;
+                            "></div>
+                      <div style="
+                            width: 0;
+                            height: 0;
+                            border-top: 2px solid transparent;
+                            border-left: 6px solid #f4f4f4;
+                            border-bottom: 2px solid transparent;
+                            transform: translateX(16px) translateY(-4px)
+                            rotate(30deg);
+                            "></div>
+                    </div>
+                    <div style="margin-left: auto">
+                      <div style="
+                            width: 0px;
+                            border-top: 8px solid #f4f4f4;
+                            border-right: 8px solid transparent;
+                            transform: translateY(16px);
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            flex-grow: 0;
+                            height: 12px;
+                            width: 16px;
+                            transform: translateY(-4px);
+                            "></div>
+                      <div style="
+                            width: 0;
+                            height: 0;
+                            border-top: 8px solid #f4f4f4;
+                            border-left: 8px solid transparent;
+                            transform: translateY(-4px) translateX(8px);
+                            "></div>
+                    </div>
+                  </div>
+                  <div style="
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        justify-content: center;
+                        margin-bottom: 24px;
+                        ">
+                    <div style="
+                          background-color: #f4f4f4;
+                          border-radius: 4px;
+                          flex-grow: 0;
+                          height: 14px;
+                          margin-bottom: 6px;
+                          width: 224px;
+                          "></div>
+                    <div style="
+                          background-color: #f4f4f4;
+                          border-radius: 4px;
+                          flex-grow: 0;
+                          height: 14px;
+                          width: 144px;
+                          "></div>
+                  </div>
+                </a>
+                <p style="
+                      color: #c9c8cd;
+                      font-family: Arial, sans-serif;
+                      font-size: 14px;
+                      line-height: 17px;
+                      margin-bottom: 0;
+                      margin-top: 8px;
+                      overflow: hidden;
+                      padding: 8px 0 7px;
+                      text-align: center;
+                      text-overflow: ellipsis;
+                      white-space: nowrap;
+                      ">
+                  <a href="https://www.instagram.com/p/Chd2F6rs6zG/?utm_source=ig_embed&amp;utm_campaign=loading" style="
+                        color: #c9c8cd;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: normal;
+                        line-height: 17px;
+                        text-decoration: none;
+                        " target="_blank">Una publicación compartida de Qhawana
+                    Condominio
+                    Ecológico (@qhawana_condominio)</a>
+                </p>
+              </div>
+            </blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
+          </div>
+          <div class="swiper-slide">
+            <blockquote class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/p/Chd9IhpsObl/?utm_source=ig_embed&amp;utm_campaign=loading"
+              data-instgrm-version="14" style="
+                  background: #fff;
+                  border: 0;
+                  border-radius: 3px;
+                  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5),
+                  0 1px 10px 0 rgba(0, 0, 0, 0.15);
+                  margin: 1px;
+                  max-width: 540px;
+                  min-width: 326px;
+                  padding: 0;
+                  width: 99.375%;
+                  width: -webkit-calc(100% - 2px);
+                  width: calc(100% - 2px);
+                  ">
+              <div style="padding: 16px">
+                <a href="https://www.instagram.com/p/Chd9IhpsObl/?utm_source=ig_embed&amp;utm_campaign=loading" style="
+                      background: #ffffff;
+                      line-height: 0;
+                      padding: 0 0;
+                      text-align: center;
+                      text-decoration: none;
+                      width: 100%;
+                      " target="_blank">
+                  <div style="
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        ">
+                    <div style="
+                          background-color: #f4f4f4;
+                          border-radius: 50%;
+                          flex-grow: 0;
+                          height: 40px;
+                          margin-right: 14px;
+                          width: 40px;
+                          "></div>
+                    <div style="
+                          display: flex;
+                          flex-direction: column;
+                          flex-grow: 1;
+                          justify-content: center;
+                          ">
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 4px;
+                            flex-grow: 0;
+                            height: 14px;
+                            margin-bottom: 6px;
+                            width: 100px;
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 4px;
+                            flex-grow: 0;
+                            height: 14px;
+                            width: 60px;
+                            "></div>
+                    </div>
+                  </div>
+                  <div style="padding: 19% 0"></div>
+                  <div style="
+                        display: block;
+                        height: 50px;
+                        margin: 0 auto 12px;
+                        width: 50px;
+                        ">
+                    <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                      xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                          <g>
+                            <path d="M556.869,30.41 C554.814,30.41
+                                  553.148,32.076 553.148,34.131 C553.148,36.186
+                                  554.814,37.852 556.869,37.852 C558.924,37.852
+                                  560.59,36.186 560.59,34.131 C560.59,32.076
+                                  558.924,30.41 556.869,30.41 M541,60.657
+                                  C535.114,60.657 530.342,55.887 530.342,50
+                                  C530.342,44.114 535.114,39.342 541,39.342
+                                  C546.887,39.342 551.658,44.114 551.658,50
+                                  C551.658,55.887 546.887,60.657 541,60.657
+                                  M541,33.886 C532.1,33.886 524.886,41.1
+                                  524.886,50 C524.886,58.899 532.1,66.113
+                                  541,66.113 C549.9,66.113 557.115,58.899
+                                  557.115,50 C557.115,41.1 549.9,33.886
+                                  541,33.886 M565.378,62.101 C565.244,65.022
+                                  564.756,66.606 564.346,67.663 C563.803,69.06
+                                  563.154,70.057 562.106,71.106 C561.058,72.155
+                                  560.06,72.803 558.662,73.347 C557.607,73.757
+                                  556.021,74.244 553.102,74.378 C549.944,74.521
+                                  548.997,74.552 541,74.552 C533.003,74.552
+                                  532.056,74.521 528.898,74.378 C525.979,74.244
+                                  524.393,73.757 523.338,73.347 C521.94,72.803
+                                  520.942,72.155 519.894,71.106 C518.846,70.057
+                                  518.197,69.06 517.654,67.663 C517.244,66.606
+                                  516.755,65.022 516.623,62.101 C516.479,58.943
+                                  516.448,57.996 516.448,50 C516.448,42.003
+                                  516.479,41.056 516.623,37.899 C516.755,34.978
+                                  517.244,33.391 517.654,32.338 C518.197,30.938
+                                  518.846,29.942 519.894,28.894 C520.942,27.846
+                                  521.94,27.196 523.338,26.654 C524.393,26.244
+                                  525.979,25.756 528.898,25.623 C532.057,25.479
+                                  533.004,25.448 541,25.448 C548.997,25.448
+                                  549.943,25.479 553.102,25.623 C556.021,25.756
+                                  557.607,26.244 558.662,26.654 C560.06,27.196
+                                  561.058,27.846 562.106,28.894 C563.154,29.942
+                                  563.803,30.938 564.346,32.338 C564.756,33.391
+                                  565.244,34.978 565.378,37.899 C565.522,41.056
+                                  565.552,42.003 565.552,50 C565.552,57.996
+                                  565.522,58.943 565.378,62.101 M570.82,37.631
+                                  C570.674,34.438 570.167,32.258 569.425,30.349
+                                  C568.659,28.377 567.633,26.702 565.965,25.035
+                                  C564.297,23.368 562.623,22.342 560.652,21.575
+                                  C558.743,20.834 556.562,20.326 553.369,20.18
+                                  C550.169,20.033 549.148,20 541,20 C532.853,20
+                                  531.831,20.033 528.631,20.18 C525.438,20.326
+                                  523.257,20.834 521.349,21.575 C519.376,22.342
+                                  517.703,23.368 516.035,25.035 C514.368,26.702
+                                  513.342,28.377 512.574,30.349 C511.834,32.258
+                                  511.326,34.438 511.181,37.631 C511.035,40.831
+                                  511,41.851 511,50 C511,58.147 511.035,59.17
+                                  511.181,62.369 C511.326,65.562 511.834,67.743
+                                  512.574,69.651 C513.342,71.625 514.368,73.296
+                                  516.035,74.965 C517.703,76.634 519.376,77.658
+                                  521.349,78.425 C523.257,79.167 525.438,79.673
+                                  528.631,79.82 C531.831,79.965 532.853,80.001
+                                  541,80.001 C549.148,80.001 550.169,79.965
+                                  553.369,79.82 C556.562,79.673 558.743,79.167
+                                  560.652,78.425 C562.623,77.658 564.297,76.634
+                                  565.965,74.965 C567.633,73.296 568.659,71.625
+                                  569.425,69.651 C570.167,67.743 570.674,65.562
+                                  570.82,62.369 C570.966,59.17 571,58.147 571,50
+                                  C571,41.851 570.966,40.831 570.82,37.631"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div style="padding-top: 8px">
+                    <div style="
+                          color: #3897f0;
+                          font-family: Arial, sans-serif;
+                          font-size: 14px;
+                          font-style: normal;
+                          font-weight: 550;
+                          line-height: 18px;
+                          ">
+                      Ver esta publicación en Instagram
+                    </div>
+                  </div>
+                  <div style="padding: 12.5% 0"></div>
+                  <div style="
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 14px;
+                        align-items: center;
+                        ">
+                    <div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            height: 12.5px;
+                            width: 12.5px;
+                            transform: translateX(0px) translateY(7px);
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            height: 12.5px;
+                            transform: rotate(-45deg) translateX(3px)
+                            translateY(1px);
+                            width: 12.5px;
+                            flex-grow: 0;
+                            margin-right: 14px;
+                            margin-left: 2px;
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            height: 12.5px;
+                            width: 12.5px;
+                            transform: translateX(9px) translateY(-18px);
+                            "></div>
+                    </div>
+                    <div style="margin-left: 8px">
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            flex-grow: 0;
+                            height: 20px;
+                            width: 20px;
+                            "></div>
+                      <div style="
+                            width: 0;
+                            height: 0;
+                            border-top: 2px solid transparent;
+                            border-left: 6px solid #f4f4f4;
+                            border-bottom: 2px solid transparent;
+                            transform: translateX(16px) translateY(-4px)
+                            rotate(30deg);
+                            "></div>
+                    </div>
+                    <div style="margin-left: auto">
+                      <div style="
+                            width: 0px;
+                            border-top: 8px solid #f4f4f4;
+                            border-right: 8px solid transparent;
+                            transform: translateY(16px);
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            flex-grow: 0;
+                            height: 12px;
+                            width: 16px;
+                            transform: translateY(-4px);
+                            "></div>
+                      <div style="
+                            width: 0;
+                            height: 0;
+                            border-top: 8px solid #f4f4f4;
+                            border-left: 8px solid transparent;
+                            transform: translateY(-4px) translateX(8px);
+                            "></div>
+                    </div>
+                  </div>
+                  <div style="
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        justify-content: center;
+                        margin-bottom: 24px;
+                        ">
+                    <div style="
+                          background-color: #f4f4f4;
+                          border-radius: 4px;
+                          flex-grow: 0;
+                          height: 14px;
+                          margin-bottom: 6px;
+                          width: 224px;
+                          "></div>
+                    <div style="
+                          background-color: #f4f4f4;
+                          border-radius: 4px;
+                          flex-grow: 0;
+                          height: 14px;
+                          width: 144px;
+                          "></div>
+                  </div>
+                </a>
+                <p style="
+                      color: #c9c8cd;
+                      font-family: Arial, sans-serif;
+                      font-size: 14px;
+                      line-height: 17px;
+                      margin-bottom: 0;
+                      margin-top: 8px;
+                      overflow: hidden;
+                      padding: 8px 0 7px;
+                      text-align: center;
+                      text-overflow: ellipsis;
+                      white-space: nowrap;
+                      ">
+                  <a href="https://www.instagram.com/p/Chd9IhpsObl/?utm_source=ig_embed&amp;utm_campaign=loading" style="
+                        color: #c9c8cd;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: normal;
+                        line-height: 17px;
+                        text-decoration: none;
+                        " target="_blank">Una publicación compartida de Qhawana
+                    Condominio
+                    Ecológico (@qhawana_condominio)</a>
+                </p>
+              </div>
+            </blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
+          </div>
+          <div class="swiper-slide">
+            <blockquote class="instagram-media"
+              data-instgrm-permalink="https://www.instagram.com/p/ChHP8zwuNda/?utm_source=ig_embed&amp;utm_campaign=loading"
+              data-instgrm-version="14" style="
+                  background: #fff;
+                  border: 0;
+                  border-radius: 3px;
+                  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5),
+                  0 1px 10px 0 rgba(0, 0, 0, 0.15);
+                  margin: 1px;
+                  max-width: 540px;
+                  min-width: 326px;
+                  padding: 0;
+                  width: 99.375%;
+                  width: -webkit-calc(100% - 2px);
+                  width: calc(100% - 2px);
+                  ">
+              <div style="padding: 16px">
+                <a href="https://www.instagram.com/p/ChHP8zwuNda/?utm_source=ig_embed&amp;utm_campaign=loading" style="
+                      background: #ffffff;
+                      line-height: 0;
+                      padding: 0 0;
+                      text-align: center;
+                      text-decoration: none;
+                      width: 100%;
+                      " target="_blank">
+                  <div style="
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        ">
+                    <div style="
+                          background-color: #f4f4f4;
+                          border-radius: 50%;
+                          flex-grow: 0;
+                          height: 40px;
+                          margin-right: 14px;
+                          width: 40px;
+                          "></div>
+                    <div style="
+                          display: flex;
+                          flex-direction: column;
+                          flex-grow: 1;
+                          justify-content: center;
+                          ">
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 4px;
+                            flex-grow: 0;
+                            height: 14px;
+                            margin-bottom: 6px;
+                            width: 100px;
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 4px;
+                            flex-grow: 0;
+                            height: 14px;
+                            width: 60px;
+                            "></div>
+                    </div>
+                  </div>
+                  <div style="padding: 19% 0"></div>
+                  <div style="
+                        display: block;
+                        height: 50px;
+                        margin: 0 auto 12px;
+                        width: 50px;
+                        ">
+                    <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
+                      xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                          <g>
+                            <path d="M556.869,30.41 C554.814,30.41
+                                  553.148,32.076 553.148,34.131 C553.148,36.186
+                                  554.814,37.852 556.869,37.852 C558.924,37.852
+                                  560.59,36.186 560.59,34.131 C560.59,32.076
+                                  558.924,30.41 556.869,30.41 M541,60.657
+                                  C535.114,60.657 530.342,55.887 530.342,50
+                                  C530.342,44.114 535.114,39.342 541,39.342
+                                  C546.887,39.342 551.658,44.114 551.658,50
+                                  C551.658,55.887 546.887,60.657 541,60.657
+                                  M541,33.886 C532.1,33.886 524.886,41.1
+                                  524.886,50 C524.886,58.899 532.1,66.113
+                                  541,66.113 C549.9,66.113 557.115,58.899
+                                  557.115,50 C557.115,41.1 549.9,33.886
+                                  541,33.886 M565.378,62.101 C565.244,65.022
+                                  564.756,66.606 564.346,67.663 C563.803,69.06
+                                  563.154,70.057 562.106,71.106 C561.058,72.155
+                                  560.06,72.803 558.662,73.347 C557.607,73.757
+                                  556.021,74.244 553.102,74.378 C549.944,74.521
+                                  548.997,74.552 541,74.552 C533.003,74.552
+                                  532.056,74.521 528.898,74.378 C525.979,74.244
+                                  524.393,73.757 523.338,73.347 C521.94,72.803
+                                  520.942,72.155 519.894,71.106 C518.846,70.057
+                                  518.197,69.06 517.654,67.663 C517.244,66.606
+                                  516.755,65.022 516.623,62.101 C516.479,58.943
+                                  516.448,57.996 516.448,50 C516.448,42.003
+                                  516.479,41.056 516.623,37.899 C516.755,34.978
+                                  517.244,33.391 517.654,32.338 C518.197,30.938
+                                  518.846,29.942 519.894,28.894 C520.942,27.846
+                                  521.94,27.196 523.338,26.654 C524.393,26.244
+                                  525.979,25.756 528.898,25.623 C532.057,25.479
+                                  533.004,25.448 541,25.448 C548.997,25.448
+                                  549.943,25.479 553.102,25.623 C556.021,25.756
+                                  557.607,26.244 558.662,26.654 C560.06,27.196
+                                  561.058,27.846 562.106,28.894 C563.154,29.942
+                                  563.803,30.938 564.346,32.338 C564.756,33.391
+                                  565.244,34.978 565.378,37.899 C565.522,41.056
+                                  565.552,42.003 565.552,50 C565.552,57.996
+                                  565.522,58.943 565.378,62.101 M570.82,37.631
+                                  C570.674,34.438 570.167,32.258 569.425,30.349
+                                  C568.659,28.377 567.633,26.702 565.965,25.035
+                                  C564.297,23.368 562.623,22.342 560.652,21.575
+                                  C558.743,20.834 556.562,20.326 553.369,20.18
+                                  C550.169,20.033 549.148,20 541,20 C532.853,20
+                                  531.831,20.033 528.631,20.18 C525.438,20.326
+                                  523.257,20.834 521.349,21.575 C519.376,22.342
+                                  517.703,23.368 516.035,25.035 C514.368,26.702
+                                  513.342,28.377 512.574,30.349 C511.834,32.258
+                                  511.326,34.438 511.181,37.631 C511.035,40.831
+                                  511,41.851 511,50 C511,58.147 511.035,59.17
+                                  511.181,62.369 C511.326,65.562 511.834,67.743
+                                  512.574,69.651 C513.342,71.625 514.368,73.296
+                                  516.035,74.965 C517.703,76.634 519.376,77.658
+                                  521.349,78.425 C523.257,79.167 525.438,79.673
+                                  528.631,79.82 C531.831,79.965 532.853,80.001
+                                  541,80.001 C549.148,80.001 550.169,79.965
+                                  553.369,79.82 C556.562,79.673 558.743,79.167
+                                  560.652,78.425 C562.623,77.658 564.297,76.634
+                                  565.965,74.965 C567.633,73.296 568.659,71.625
+                                  569.425,69.651 C570.167,67.743 570.674,65.562
+                                  570.82,62.369 C570.966,59.17 571,58.147 571,50
+                                  C571,41.851 570.966,40.831 570.82,37.631"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <div style="padding-top: 8px">
+                    <div style="
+                          color: #3897f0;
+                          font-family: Arial, sans-serif;
+                          font-size: 14px;
+                          font-style: normal;
+                          font-weight: 550;
+                          line-height: 18px;
+                          ">
+                      Ver esta publicación en Instagram
+                    </div>
+                  </div>
+                  <div style="padding: 12.5% 0"></div>
+                  <div style="
+                        display: flex;
+                        flex-direction: row;
+                        margin-bottom: 14px;
+                        align-items: center;
+                        ">
+                    <div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            height: 12.5px;
+                            width: 12.5px;
+                            transform: translateX(0px) translateY(7px);
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            height: 12.5px;
+                            transform: rotate(-45deg) translateX(3px)
+                            translateY(1px);
+                            width: 12.5px;
+                            flex-grow: 0;
+                            margin-right: 14px;
+                            margin-left: 2px;
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            height: 12.5px;
+                            width: 12.5px;
+                            transform: translateX(9px) translateY(-18px);
+                            "></div>
+                    </div>
+                    <div style="margin-left: 8px">
+                      <div style="
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            flex-grow: 0;
+                            height: 20px;
+                            width: 20px;
+                            "></div>
+                      <div style="
+                            width: 0;
+                            height: 0;
+                            border-top: 2px solid transparent;
+                            border-left: 6px solid #f4f4f4;
+                            border-bottom: 2px solid transparent;
+                            transform: translateX(16px) translateY(-4px)
+                            rotate(30deg);
+                            "></div>
+                    </div>
+                    <div style="margin-left: auto">
+                      <div style="
+                            width: 0px;
+                            border-top: 8px solid #f4f4f4;
+                            border-right: 8px solid transparent;
+                            transform: translateY(16px);
+                            "></div>
+                      <div style="
+                            background-color: #f4f4f4;
+                            flex-grow: 0;
+                            height: 12px;
+                            width: 16px;
+                            transform: translateY(-4px);
+                            "></div>
+                      <div style="
+                            width: 0;
+                            height: 0;
+                            border-top: 8px solid #f4f4f4;
+                            border-left: 8px solid transparent;
+                            transform: translateY(-4px) translateX(8px);
+                            "></div>
+                    </div>
+                  </div>
+                  <div style="
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        justify-content: center;
+                        margin-bottom: 24px;
+                        ">
+                    <div style="
+                          background-color: #f4f4f4;
+                          border-radius: 4px;
+                          flex-grow: 0;
+                          height: 14px;
+                          margin-bottom: 6px;
+                          width: 224px;
+                          "></div>
+                    <div style="
+                          background-color: #f4f4f4;
+                          border-radius: 4px;
+                          flex-grow: 0;
+                          height: 14px;
+                          width: 144px;
+                          "></div>
+                  </div>
+                </a>
+                <p style="
+                      color: #c9c8cd;
+                      font-family: Arial, sans-serif;
+                      font-size: 14px;
+                      line-height: 17px;
+                      margin-bottom: 0;
+                      margin-top: 8px;
+                      overflow: hidden;
+                      padding: 8px 0 7px;
+                      text-align: center;
+                      text-overflow: ellipsis;
+                      white-space: nowrap;
+                      ">
+                  <a href="https://www.instagram.com/p/ChHP8zwuNda/?utm_source=ig_embed&amp;utm_campaign=loading" style="
+                        color: #c9c8cd;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: normal;
+                        line-height: 17px;
+                        text-decoration: none;
+                        " target="_blank">Una publicación compartida de Qhawana
+                    Condominio
+                    Ecológico (@qhawana_condominio)</a>
+                </p>
+              </div>
+            </blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="listing-reels">
+      <div class="swiper reel-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <iframe
+              src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fqhawanacasasdecampo%2Fvideos%2F613608616954851%2F&show_text=true&width=560&t=0"
+              width="100%" height="600" style="border: none; overflow: hidden" scrolling="no" frameborder="0"
+              allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media;
+                  picture-in-picture; web-share" allowfullscreen="true"></iframe>
+            <script async src="//www.instagram.com/embed.js"></script>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fqhawanacasasdecampo%2Fposts%2Fpfbid02cqHTPg2ZMX4X9BTNtcr7nZGtWqeBNKic1xKMmp5cvUyAePwNtQVsbHuv4EpGVL9pl&show_text=true&width=500"
+              width="100%" height="600" style="border: none; overflow: hidden" scrolling="no" frameborder="0"
+              allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media;
+                  picture-in-picture; web-share"></iframe>
+          </div>
+          <div class="swiper-slide">
+            <!-- <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fqhawanacasasdecampo%2Fposts%2Fpfbid08HfXL3BUwNaa132aHYyykR5wKCW61h8g6FPHKU4iExztrfyvxdG1xB86AMWPGHtcl&show_text=true&width=100" width="100%" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> -->
+
+            <iframe
+              src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fqhawanacasasdecampo%2Fvideos%2F378620134446408%2F&show_text=true&width=560&t=0"
+              width="100%" height="600" style="border: none; overflow: hidden" scrolling="no" frameborder="0"
+              allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media;
+                  picture-in-picture; web-share" allowfullscreen="true"></iframe>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- <div class="listing-reels">
+          <div class="swiper reel-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fqhawanacasasdecampo%2Fposts%2Fpfbid08HfXL3BUwNaa132aHYyykR5wKCW61h8g6FPHKU4iExztrfyvxdG1xB86AMWPGHtcl&show_text=true&width=100" width="100%" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div> -->
+  </div>
+
+  <!-- section de sobre tarapoto-->
+  <!-- <div class="section-page" id="page-sobretarapoto">
+        <div class="header-section" data-aos="fade-up">
+          <img src="img/icono_qhawana.png" alt="" />
+          <h3 class="section-name-index">
+            ¿Por qué <b class="bold-qh">invertir</b> en Tarapoto?
+          </h3>
+          <span class="separator-title-section"></span>
+          <p class="section-desc-index">
+            Comprando en Qhawana estarás invirtiendo en Tarapoto: proyectada
+            como
+            una ciudad de próspero desarrollo y grandes inversiones.
+          </p>
+        </div>
+
+        <div class="row row_qh bg-tarapoto">
+          <div class="col-lg-12">
+            <div class="swiper blog-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card-blog">
+                    <img
+                      src="https://tarapoto.com/wp-content/uploads/2020/06/quechua-1024x683.jpg"
+                      alt=""
+                      />
+                    <div class="body-card-blog">
+                      <p>Lugar con tradición y encanto natural</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-blog">
+                    <img
+                      src="https://larepublica.pe/resizer/Xk5bGRJP3oVqfPVJHM6LUDo1pBA=/1250x735/top/smart/arc-anglerfish-arc2-prod-gruporepublica.s3.amazonaws.com/public/XSXRCMHPXRDBHFCCHCZTHXMYSI.jpg"
+                      alt=""
+                      />
+                    <div class="body-card-blog">
+                      <p>Exquisita y maravillosa gastronomia</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-blog">
+                    <img
+                      src="https://maypitravel.com/wp-content/uploads/2019/01/220g10000000pb7kx9206_R_800_525.jpg"
+                      alt=""
+                      />
+                    <div class="body-card-blog">
+                      <p>Buen Clima todo el año</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12"></div>
+        </div>
+        <div class="row row_qh">
+          <h3 class="section-name-index">
+            06 <b class="bold-qh">razones</b> principales
+          </h3>
+          <span class="separator-title-section"></span>
+          <p class="section-desc-index">
+            para invertir en tarapoto, aquí te las contamos:
+          </p>
+          <ul>
+            <li>Tarapoto es un HUB turístico del Perú</li>
+            <li>
+              Según las plataformas de Google, Kayak, Booking; es la cuarta
+              ciudad
+              más preferida por los viajeros nacionales, después de Lima, Cuzco
+              y
+              Arequipa
+            </li>
+            <li>
+              Según el INEI Tarapoto es la ciudad más segura del Perú, mínima
+              delincuencia
+            </li>
+            <li>
+              Posee un clima tropical, ello permite la visita de turistas los
+              doce
+              meses del año
+            </li>
+            <li>
+              Tarapoto cuenta con el Sello Mundial Safe Travels que garantiza la
+              seguridad y salubridad como deestino Turístico.
+            </li>
+            <li>
+              Tarapoto está dentro del Top 100 de mejores destinos turísticos
+              sostenibles, premio otorgado por la ONG Green Destinations ubicada
+              en los países bajos.
+            </li>
+          </ul>
+        </div>
+      </div> -->
+  <!-- section video -->
+  <div class="section-page" id="page-sobretarapoto">
+    <div class="header-section" data-aos="fade-up">
+      <img src="img/icono_qhawana.png" alt="" />
+      <h3 class="section-name-index">
+        ¿Por qué <b class="bold-qh">invertir</b> en Qhawna?
+      </h3>
+      <span class="separator-title-section"></span>
+      <p class="section-desc-index">
+        Comprando en Qhawana estarás invirtiendo en Tarapoto: proyectada
+        como
+        una ciudad de próspero desarrollo y grandes inversiones.
+      </p>
+    </div>
+
+    <div class="row row_qh">
+      <iframe style="max-width: 790px !important; margin: 0 auto;" width="790" height="444"
+        src="https://www.youtube.com/embed/L1Xfsg2gXBE" title="Conoce Qhawana Condominio Ecológico de Tarapoto"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+    <!-- <div class="row row_qh">
+          <h3 class="section-name-index">
+            06 <b class="bold-qh">razones</b> principales
+          </h3>
+          <span class="separator-title-section"></span>
+          <p class="section-desc-index">
+            para invertir en tarapoto, aquí te las contamos:
+          </p>
+          <ul>
+            <li>Tarapoto es un HUB turístico del Perú</li>
+            <li>
+              Según las plataformas de Google, Kayak, Booking; es la cuarta
+              ciudad
+              más preferida por los viajeros nacionales, después de Lima, Cuzco
+              y
+              Arequipa
+            </li>
+            <li>
+              Según el INEI Tarapoto es la ciudad más segura del Perú, mínima
+              delincuencia
+            </li>
+            <li>
+              Posee un clima tropical, ello permite la visita de turistas los
+              doce
+              meses del año
+            </li>
+            <li>
+              Tarapoto cuenta con el Sello Mundial Safe Travels que garantiza la
+              seguridad y salubridad como deestino Turístico.
+            </li>
+            <li>
+              Tarapoto está dentro del Top 100 de mejores destinos turísticos
+              sostenibles, premio otorgado por la ONG Green Destinations ubicada
+              en los países bajos.
+            </li>
+          </ul>
+        </div> -->
+  </div>
+  <div class="section-page bg-tarapoto" id="page-beneficios">
+    <div class="header-section">
+      <img src="img/icono_qhawana.png" alt="" />
+      <h3 class="section-name-index">
+        <b class="bold-qh">Beneficios</b> del Proyecto Qhawana
+      </h3>
+      <span class="separator-title-section"></span>
+      <p class="section-desc-index">
+        Sabias que la nueva tendencia inmobiliaria tiene como prioridad el
+        bienestar integral. Por ello en Qhawana encontrarás 05 beneficios
+        importantes que harán placentera tu visita y la obtención de una
+        plusvalía constante de tu inversión.
+      </p>
+    </div>
+    <div class="row row_qh justify-between gap-6 flex-wrap lg:flex-nowrap">
+      <div class="w-full lg:w-[48%]">
+        <h3 class="section-name-index-s">
+          Beneficio <b class="bold-qh">Físico</b>
+        </h3>
+        <span class="separator-title-section"></span>
+        <p class="section-desc-index-s mt-3">
+          Cada espacio ha sido proyectado para garantizarte un estilo de
+          vida
+          tranquilo y saludable en armonía con la naturaleza.
+          Equilibramos el entorno exterior con áreas verdes propias del
+          condominio, sumado a ello nuestras vistas únicas e impresionantes
+          hacia los valles Tarapoto, Río Mayo complementado con espacios
+          recreativos y deportivos.
+        </p>
+      </div>
+      <div class="w-full lg:w-[48%]">
+        <h3 class="section-name-index-s">
+          Beneficio <b class="bold-qh">Emocional</b>
+        </h3>
+        <span class="separator-title-section"></span>
+        <p class="section-desc-index-s mt-3">
+          Un ambiente libre de estrés, ruidos o contaminación, te ayudará a
+          encontrar tu equilibrio interior y emocional, en Qhawana vivirás
+          sensaciones únicas.
+        </p>
+      </div>
+      <div class="w-full lg:w-[48%]">
+        <h3 class="section-name-index-s">
+          Beneficio <b class="bold-qh">Financiero</b>
+        </h3>
+        <span class="separator-title-section"></span>
+        <p class="section-desc-index-s mt-3">
+          Tu terreno y casa de campo tendrá una alta revalorización dado
+          que tu inversión está ubicado en una ciudad turística que recibe
+          visitantes los doce meses del año, una ciudad con un crecimiento
+          constante, te ofrecemos no solo un lote de casa de campo, sino
+          nuestra propuesta es brindarte un producto que te ayudará generar
+          ingresos de rentas, te otorgará bienestar económico a mediano
+          plazo,
+          es la mejor inversión para el futuro de tu familia, lo más
+          importante es que podrás recuperar tu inversión en un horizonte de
+          seis a siete años, por todo ello pertenecer a Qhawana te brindará
+          la
+          tranquilidad de haber realizado una buena inversión por su fácil
+          recuperación.
+        </p>
+      </div>
+      <div class="w-full lg:w-[48%]">
+        <h3 class="section-name-index-s">
+          Beneficio <b class="bold-qh">Ambiental</b>
+        </h3>
+        <span class="separator-title-section"></span>
+        <p class="section-desc-index-s mt-3">
+          Vivir en armonía con la naturaleza utilizando y cuidando los
+          recursos naturales sin perder ninguna comodidad de nuestros
+          tiempos, es el estilo de vida que buscamos para nuestros
+          propietarios.
+        </p>
+      </div>
+      <div class="w-full lg:w-[40%]">
+        <h3 class="section-name-index-s">
+          Beneficio <b class="bold-qh">Social</b>
+        </h3>
+        <span class="separator-title-section"></span>
+        <p class="section-desc-index-s mt-3">
+          Una sociedad donde cada habitante entiende que su propiedad no
+          se termina en la puerta de su casa, sino que cuida y respeta a los
+          demás habitantes.
+        </p>
+      </div>
+    </div>
+
+    <div class="row row_qh">
+      <div class="col col-sm bloque-qhawana">
+        <div class="amenidades-list card-qh grid-4-column container-qh">
+          <div class="box-icon" data-aos="zoom-in">
+            <img loading="lazy" class="icon" src="icons/campesino.png" alt="" />
+            <p class="description-box-icon" data-aos="zoom-in">
+              Poblaciones cercanas
+              <b class="bold-color-qh">con todos los servicios</b>
+            </p>
+          </div>
+          <div class="box-icon" data-aos="zoom-in">
+            <img loading="lazy" class="icon" src="icons/clima.png" alt="" />
+            <p class="description-box-icon" data-aos="zoom-in">
+              <b class="bold-color-qh">Buen clima </b>todo el año
+            </p>
+          </div>
+          <div class="box-icon" data-aos="zoom-in">
+            <img loading="lazy" class="icon" src="icons/amenidades/002-propiedad.png" alt="" />
+            <p class="description-box-icon" data-aos="zoom-in">
+              Título de <b class="bold-color-qh">propiedad</b>
+            </p>
+          </div>
+          <div class="box-icon" data-aos="zoom-in">
+            <img loading="lazy" class="icon" src="icons/bosque-1.png" alt="" />
+            <p class="description-box-icon" data-aos="zoom-in">
+              <b class="bold-color-qh">60%</b> áreas comunes y
+              <b class="bold-color-qh">10.7 Hectáreas</b> extensión del
+              condominio
+            </p>
+          </div>
+
+          <div class="box-icon" data-aos="zoom-in">
+            <img loading="lazy" class="icon" src="icons/agua.png" alt="" />
+            <p class="description-box-icon" data-aos="zoom-in">
+              Disposición de agua <b class="bold-color-qh">todo el año</b>
+            </p>
+          </div>
+
+          <div class="box-icon" data-aos="zoom-in">
+            <img loading="lazy" class="icon" src="icons/amenidades/004-bush.png" alt="" />
+            <p class="description-box-icon" data-aos="zoom-in">
+              Cerco <b class="bold-color-qh">vivo</b>
+            </p>
+          </div>
+
+          <div class="box-icon" data-aos="zoom-in">
+            <img loading="lazy" class="icon" src="icons/amenidades/014-papelera-de-reciclaje.png" alt="" />
+            <p class="description-box-icon" data-aos="zoom-in">
+              Ciudad <b class="bold-color-qh">Ecoeficiente</b>
+            </p>
+          </div>
+
+          <div class="box-icon" data-aos="zoom-in">
+            <img loading="lazy" class="icon" src="icons/amenidades/012-panel-solar.png" alt="" />
+            <p class="description-box-icon" data-aos="zoom-in">
+              Paneles solares para
+              <b class="bold-color-qh">alumbrado público</b>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section ubicacion -->
+  <div class="section-page bg-maps">
+    <div class="header-section" data-aos="fade-up">
+      <img src="img/icono_qhawana.png" alt="" />
+      <h3 class="section-name-index">
+        <b class="bold-qh">Ubícanos en:</b>
+      </h3>
+      <span class="separator-title-section"></span>
+    </div>
+    <div class="row row_qh">
+      <div class="col-lg-6">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126863.2151349155!2d-76.4725961!3d-6.4612854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8cdac895e663964!2sQhawana%20Condominio%20Ecol%C3%B3gico!5e0!3m2!1ses!2spe!4v1664064114202!5m2!1ses!2spe"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-lg-6">
+        <a href="https://earth.google.com/web/@-6.50153038,-76.4554118,291.65864687a,29386.51406181d,35y,0.00200708h,3.43745205t,0r"
+          target="_blank" rel="noopener noreferrer">
+          <img width="100%" src="img/earth-google.jpeg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- section contacto -->
+  <div class="section-page bg-contacto" id="page-contacto">
+    <div class="header-section" data-aos="fade-up">
+      <img src="img/icono_qhawana.png" alt="" />
+      <h3 class="section-name-index">
+        Ponte en <b class="bold-qh">contácto</b> con nosotros
+      </h3>
+      <span class="separator-title-section"></span>
+    </div>
+    <div class="container-qh">
+      <form id="form-contact" class="form-contacto">
+        <div class="form-body">
+          <div class="input-list grid-2-column">
+            <input id="user_name" name="user_name" placeholder="Nombres y Apellidos" type="text" class="item-input" />
+            <input id="message" name="message" placeholder="Mensaje" type="text" class="item-input" />
+          </div>
+          <div class="input-list grid-2-column">
+            <input id="user_email" name="user_email" placeholder="Correo" type="email" class="item-input" />
+            <input id="user_telefono" name="user_telefono" placeholder="Telefono" type="text" class="item-input" />
+          </div>
+          <!-- <div class="input-list">
+              <input id="user_fecha" name="user_fecha"  placeholder="Fecha de visita" type="date" class="item-input">
+            </div> -->
+        </div>
+        <div class="footer-form">
+          <button type="submit" class="btn-form bg-primario">
+            Quiero más información
+          </button>
+        </div>
+        <div class="response-email"></div>
+      </form>
+    </div>
+  </div>
+  <div class="bg-contacto" id="page-contacto">
+    <div class="header-section" data-aos="fade-up">
+      <h2 class="span-info">Un Proyecto de:</h2>
+      <img class="logo-inviersis" width="650px" src="img/logoinviersis.png" alt="" />
+    </div>
+  </div>
+  <!-- section boton asesor -->
+  <div class="bg-asesor">
+    <button type="button" data-toggle="modal" data-target="#modal-asesor"
+      class="btn-agenda-asesor bg-[#043021] text-white">Agenda una reunión</button>
+  </div>
+
+  <!-- section footer -->
+  <div class="section-page footer-crea">
+    <div class="row row_qh">
+      <div class="col-lg-4">
+        <img class="logo-footer" src="img/logo-footer.png" alt="" />
+        <h3 class="info-contact">
+          Qhawana es un proyecto de Condominio Vacacional ubicado en Tarapoto, dirigido a inversionistas interesados en
+          generar ingresos a través de rentas vacacionales.
+        </h3>
+      </div>
+      <div class="col-lg-4">
+        <h2 class="title-info mb-4">Explora</h2>
+        <ul class="menu-footer">
+          <li>
+            <a href="../">Sobre Inviersis</a>
+          </li>
+          <li>
+            <a href="#">Inicio</a>
+          </li>
+          <li>
+            <a href="#page-about-qhawana"> Sobre Qhawana </a>
+          </li>
+          <li>
+            <a href="#page-proyeccion"> Proyeccion del proyecto </a>
+          </li>
+          <li>
+          <li>
+            <a href="#page-zonas"> Zonas del Proyecto </a>
+          </li>
+          <li>
+            <a href="#page-beneficios"> Beneficios </a>
+          </li>
+          <li>
+            <a href="#page-contacto"> Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h2 class="title-info mb-4">Contácto:</h2>
+        <h3 class="info-contact">+51 991059659</h3>
+        <h3 class="info-contact">ventas@inviersis.pe</h3>
+        <h3 class="info-contact">
+          Calle Uno Nro. 061- Oficina 103- Urbanizacion Corpac- San Isidro-
+          Lima
+        </h3>
+        <div class="redes-social">
+          <a target="_blank" href="https://www.facebook.com/qhawanacasasdecampo" class="box-social"><ion-icon
+              name="logo-facebook"></ion-icon></a>
+          <a target="_blank"
+            href="https://api.whatsapp.com/send?phone=51991059659&text=Hola%20vengo%20del%20sitio%20web%20Brindeme%20informaci%C3%B3n%20del%20proyecto%20Qhawana"
+            class="box-social"><ion-icon name="logo-whatsapp"></ion-icon></a>
+          <a target="_blank" href="https://www.instagram.com/inviersis_inmobiliaria/" class="box-social"><ion-icon
+              name="logo-instagram"></ion-icon></a>
+        </div>
+      </div>
+    </div>
+    <div class="bar-bottom-footer col-lg-12">
+      <p class="mb-0">2022 Qhawana | Todos los derechos reservados</p>
+    </div>
+  </div>
+
+  <!-- -------------SCRIPTS JS---------------- -->
+
+  <!-- SCRIPT DE SWIPER JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="js/swiper_custom.js"></script>
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!-- aos javascript -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- scroll out js -->
+  <!-- <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script> -->
+  <script></script>
+
+  <!-- IONICONS SCRIPT -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <!-- jquery min -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/video_play.js"></script>
+
+  <!-- loading js -->
+  <script src="js/loading.js"></script>
+
+
+  <!-- validacion de formulario -->
+  <script src="js/validacion-formulario.js"></script>
+
+  <!-- lighbox jquery -->
+  <script src="js/lightbox.js"></script>
+  <script src="js/lotizacion.js"></script>
+  <script src="js/email.js"></script>
+</body>
+
+</html>

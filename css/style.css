@@ -1,0 +1,1150 @@
+.texto-small-qh {
+  font-size: 14px;
+  text-align: justify;
+}
+/* PORTADA HOME */
+.section-name-index-s {
+  max-width: 600px;
+  font-size: 25px !important;
+}
+.section-desc-index-s {
+  text-align: justify;
+  max-width: 800px;
+  font-size: 18px !important;
+}
+/* ---------------VIDEO PORTADA------------- */
+.modal-portada .modal-dialog {
+  max-width: 1040px !important;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+}
+.modal-portada .modal-dialog .modal-content {
+  height: max-content;
+}
+.modal-portada .modal-content .modal-body {
+  height: 100%;
+}
+.modal-portada .modal-content .modal-body > iframe {
+  height: 100%;
+}
+.btn-portada {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  padding: 5px 20px;
+}
+
+.portada-swiper {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+}
+/* .portada-swiper img {
+    object-position: center center;
+  } */
+.content-text-portada {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent !important;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  z-index: 1000;
+  /* padding: 0px 200px;  */
+}
+.content-text-portada button {
+  border: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.content-text-portada button > ion-icon {
+  font-size: 60px;
+  color: #fff;
+}
+.content-text-portada h1,
+.content-text-portada p {
+  text-align: center;
+}
+/* SECTION LOTIZACION */
+#info-sector-id-aplication > p {
+  font-size: 12px !important;
+}
+
+/* bg video */
+.bg-video {
+  margin-top: -360px !important;
+  z-index: 2000;
+  position: relative;
+}
+.bg-video iframe {
+  border: 15px solid #fff;
+  width: 100% !important;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 500px !important;
+}
+.swiper-slide.portada::before {
+  background: rgb(22, 78, 59);
+  background: linear-gradient(
+    0deg,
+    rgba(22, 78, 59, 0.7038165608040091) 14%,
+    rgba(101, 101, 101, 0) 100%
+  );
+}
+/* bg mirador */
+.bg-mirador {
+  /* background-attachment: fixed; */
+  /* background-image: url("https://images.adsttc.com/media/images/5721/9e95/e58e/ced9/f100/0020/large_jpg/Parque_Humano_-_Casa_en_el_bosque_13.jpg?1461821063");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; */
+  /* height: 90vh; */
+  overflow: hidden;
+}
+/* .mirador-swiper {
+    height: 80vh;
+  } */
+.mirador-swiper .swiper-pagination-bullet {
+  background-color: #fff !important;
+  width: 10px;
+  height: 10px;
+}
+.mirador-swiper .overlay-img {
+  object-fit: contain !important;
+}
+.mirador-swiper .content-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2500;
+  padding: 0px 40px;
+  max-width: 1200px;
+  margin: auto;
+  color: #fff !important;
+}
+.mirador-swiper .content-text h2 {
+  text-shadow: 0px 1px 3px #000;
+}
+.mirador-swiper .content-text p {
+  text-shadow: 0px 1px 3px #000;
+}
+.overlay-page {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  /* background: rgb(22, 78, 59);
+    background: linear-gradient(
+      104deg,
+      rgba(22, 78, 59, 0.742734593837535) 24%,
+      rgba(22, 78, 59, 0) 44%
+    ); */
+  z-index: 2000;
+}
+
+.bg-app-lote {
+  position: relative;
+  /* background: #f8fafb; */
+  /* background-attachment: fixed;
+    background-image: url("http://www.bosques.gob.pe/files/200x148/Portada_29042021.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+  background-color: var(--bg-primary);
+}
+
+.bg-lotizacion {
+  width: 100%;
+  transition: all 0.5s;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.bg-lotizacion.hidden-app {
+  height: 0;
+  overflow: hidden;
+  padding: 0px 160px;
+}
+.bg-lotizacion h1 {
+  margin-bottom: 55px;
+  text-align: center;
+}
+.bg-lotizacion h4 {
+  text-decoration: underline;
+  margin-top: 20px;
+}
+.btn-app-lotes {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  border-radius: 20px;
+  background: var(--bg-primary);
+  color: #fff;
+  padding: 15px 20px;
+  box-shadow: 0px 5px 10px -5px #000;
+}
+
+.description-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.description-box p {
+  font-size: 16px !important;
+}
+#sector-id-aplication > img {
+  width: 100%;
+  max-width: 500px;
+  object-fit: contain;
+}
+.detalle-info-sector {
+  padding: 0px 40px;
+}
+.listing-sector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 0px !important;
+  margin-bottom: 40px;
+}
+.listing-sector > .item-search {
+  width: 100%;
+  list-style: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: none;
+  margin: 0 !important;
+}
+.listing-sector > .item-search:hover {
+  background-color: #ececec;
+}
+.listing-sector > .item-search:nth-child(1) {
+  border: 2px dashed #00ff3c;
+}
+.listing-sector > .item-search:nth-child(2) {
+  border: 2px dashed #00e9ef;
+}
+.listing-sector > .item-search:nth-child(3) {
+  border: 2px dashed #ff7900;
+}
+.listing-sector > .item-search:nth-child(4) {
+  border: 2px dashed #882af4;
+}
+.listing-sector > .item-search:nth-child(5) {
+  border: 2px dashed #ddf219;
+}
+.listing-sector > .item-search:nth-child(6) {
+  border: 2px dashed #f22adf;
+}
+
+.lotes-cat {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, max-content);
+}
+.lotes-cat > li {
+  width: 50px;
+  height: 50px;
+}
+.cat-lotes {
+  margin-top: 40px;
+}
+.lotes-cat > li {
+  list-style: NONE;
+  border: 1px solid #ececec;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.state-lotes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+  padding-left: 0px !important;
+}
+.item-estado {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.state-lotes > .item-estado:nth-child(1) > ion-icon {
+  color: #418300;
+}
+.state-lotes > .item-estado:nth-child(2) > ion-icon {
+  color: #dd8b07;
+}
+.state-lotes > .item-estado:nth-child(3) > ion-icon {
+  color: #d54c4c;
+}
+
+.modal-lotes-dialogo {
+  max-width: 1040px !important;
+}
+.modal-lotes-dialogo .modal-content {
+  /* background-image: url("../img/back_cesped.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover; */
+} /* SECTION VISTAS */
+
+.vista-valle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+.vista-valle > img {
+  width: 80px;
+}
+
+/* vistas home */
+.galeria-swiper {
+  width: 100%;
+  height: max-content;
+  overflow: hidden;
+}
+.bg-vistas .swiper-slide.img-galeria {
+  width: 500px;
+}
+
+/* amenidades home */
+
+/* reels */
+.bg-reels .listing-reels {
+  max-width: 1240px;
+  margin: auto;
+  padding: 0px 40px;
+}
+.reels-items {
+  gap: 30px;
+}
+
+/* more info */
+.moreinfo-description {
+  gap: 50px;
+}
+.moreinfo-swiper .img-galeria {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.moreinfo-swiper .img-galeria > img {
+  padding: 0 !important;
+}
+.moreinfo-swiper {
+  position: relative;
+  overflow: hidden;
+}
+.moreinfo-swiper .img-galeria .content-info {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  padding: 12px 24px;
+  background-color: rgb(5, 116, 47);
+}
+.content-info h3 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.amenidades-list {
+  /* background: #c5fbcf; */
+  max-width: 1240px;
+  width: 100%;
+  gap: 30px;
+  justify-content: space-around;
+  padding: 40px 40px;
+  margin: auto;
+}
+.amenidades-list .box-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.amenidades-list .box-icon .icon {
+  width: 60px;
+}
+.amenidades-list .box-icon .description-box-icon {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* proyeccion section */
+.bg-proyeccion {
+  background-color: #fafafa;
+  /* background-image: url("../img/renders/03.jpg.png"); */
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.overlay-section {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: #186e51;
+  opacity: 0.95;
+  z-index: 800;
+}
+
+.entregable-list {
+  width: 100%;
+  max-width: 1040px;
+  gap: 30px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1000;
+}
+.entregable-list .item-card {
+  display: flex;
+  gap: 20px;
+}
+.entregable-list .item-card .number-item {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--bg-primary);
+  font-size: 18px;
+  padding: 15px;
+}
+/* .description-item {
+    color: #fff;
+  } */
+
+/* csss contacto */
+.form-contacto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0% 20%;
+}
+.form-contacto .form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-contacto .form-body .input-list {
+  gap: 20px;
+}
+.form-contacto .form-body .item-input {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  border: 1px solid #3d3f465e;
+  border-radius: 12px;
+  background-color: #fff;
+}
+.form-contacto .form-body .item-input:focus {
+  outline: none;
+}
+.form-contacto .footer-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-contacto .footer-form .btn-form {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 13px;
+  background-color: #365648;
+  color: #fff;
+}
+
+/* style redes sociales */
+.section-redes-socials {
+  width: max-content;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 4000;
+}
+.box-social {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #0a3829;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  /* box-shadow: 0px 0px 10px 2px #ececec; */
+}
+
+/* bg brochure */
+.bg-brochure {
+  width: 100%;
+}
+
+.bg-tarapoto {
+  background-color: #f5f5f5;
+}
+.bg-tarapoto .card-qh {
+  background-color: #fff;
+}
+
+.response-email {
+  width: 100%;
+  display: none;
+  padding: 10px 20px;
+}
+.response-email.error {
+  display: flex;
+  background-color: rgba(255, 0, 0, 0.642);
+  color: rgb(233, 3, 37);
+}
+.response-email.sucess {
+  display: flex;
+  background-color: rgb(10 202 118 / 62%);
+  color: rgb(2, 72, 46);
+}
+
+.mg-qh-port {
+  margin-top: 250px;
+}
+
+@media (max-width: 600px) {
+  .texto-small-qh {
+    font-size: 22px;
+  }
+}
+.texto-small-qh {
+  font-size: 16px;
+}
+/* PORTADA HOME */
+.section-name-index-s {
+  max-width: 600px;
+  font-size: 25px !important;
+}
+.section-desc-index-s {
+  max-width: 800px;
+  font-size: 18px !important;
+}
+/* ---------------VIDEO PORTADA------------- */
+.modal-portada .modal-dialog {
+  max-width: 1040px !important;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+}
+.modal-portada .modal-dialog .modal-content {
+  height: max-content;
+}
+.modal-portada .modal-content .modal-body {
+  height: 100%;
+}
+.modal-portada .modal-content .modal-body > iframe {
+  height: 100%;
+}
+.btn-portada {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  padding: 5px 20px;
+}
+
+.portada-swiper {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
+}
+/* .portada-swiper img {
+    object-position: center center;
+  } */
+.content-text-portada {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent !important;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  z-index: 1000;
+  /* padding: 0px 200px;  */
+}
+.content-text-portada button {
+  border: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.content-text-portada button > ion-icon {
+  font-size: 60px;
+  color: #fff;
+}
+.content-text-portada h1,
+.content-text-portada p {
+  text-align: center;
+}
+/* SECTION LOTIZACION */
+#info-sector-id-aplication > p {
+  font-size: 12px !important;
+}
+
+/* bg video */
+.bg-video {
+  margin-top: -360px !important;
+  z-index: 2000;
+  position: relative;
+}
+.bg-video iframe {
+  border: 15px solid #fff;
+  width: 100% !important;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  height: 500px !important;
+}
+.swiper-slide.portada::before {
+  background: rgb(22, 78, 59);
+  background: linear-gradient(
+    0deg,
+    rgba(22, 78, 59, 0.7038165608040091) 14%,
+    rgba(101, 101, 101, 0) 100%
+  );
+}
+#video-portada::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1500;
+  background: rgb(22, 78, 59);
+  background: linear-gradient(
+    0deg,
+    rgb(9 72 8 / 87%) 14%,
+    rgba(101, 101, 101, 0) 100%
+  );
+}
+/* bg mirador */
+.bg-mirador {
+  /* background-attachment: fixed; */
+  /* background-image: url("https://images.adsttc.com/media/images/5721/9e95/e58e/ced9/f100/0020/large_jpg/Parque_Humano_-_Casa_en_el_bosque_13.jpg?1461821063");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; */
+  /* height: 90vh; */
+  overflow: hidden;
+}
+/* .mirador-swiper {
+    height: 80vh;
+  } */
+.mirador-swiper .swiper-pagination-bullet {
+  background-color: #fff !important;
+  width: 10px;
+  height: 10px;
+}
+.mirador-swiper .overlay-img {
+  object-fit: contain !important;
+}
+.mirador-swiper .content-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2500;
+  padding: 0px 40px;
+  max-width: 1200px;
+  margin: auto;
+  color: #fff !important;
+}
+.mirador-swiper .content-text h2 {
+  text-shadow: 0px 1px 3px #000;
+}
+.mirador-swiper .content-text p {
+  text-shadow: 0px 1px 3px #000;
+}
+.overlay-page {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  /* background: rgb(22, 78, 59);
+    background: linear-gradient(
+      104deg,
+      rgba(22, 78, 59, 0.742734593837535) 24%,
+      rgba(22, 78, 59, 0) 44%
+    ); */
+  z-index: 2000;
+}
+
+.bg-app-lote {
+  position: relative;
+  /* background: #f8fafb; */
+  /* background-attachment: fixed;
+    background-image: url("http://www.bosques.gob.pe/files/200x148/Portada_29042021.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+  background-color: var(--bg-primary);
+}
+
+.bg-lotizacion {
+  width: 100%;
+  transition: all 0.5s;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.bg-lotizacion.hidden-app {
+  height: 0;
+  overflow: hidden;
+  padding: 0px 160px;
+}
+.bg-lotizacion h1 {
+  margin-bottom: 55px;
+  text-align: center;
+}
+.bg-lotizacion h4 {
+  text-decoration: underline;
+  margin-top: 20px;
+}
+.btn-app-lotes {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  border-radius: 20px;
+  background: var(--bg-primary);
+  color: #fff;
+  padding: 15px 20px;
+  box-shadow: 0px 5px 10px -5px #000;
+}
+
+.description-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.description-box p {
+  font-size: 16px !important;
+}
+#sector-id-aplication > img {
+  width: 100%;
+  max-width: 500px;
+  object-fit: contain;
+}
+.detalle-info-sector {
+  padding: 0px 40px;
+}
+.listing-sector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 0px !important;
+  margin-bottom: 40px;
+}
+.listing-sector > .item-search {
+  width: 100%;
+  list-style: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: none;
+  margin: 0 !important;
+}
+.listing-sector > .item-search:hover {
+  background-color: #ececec;
+}
+.listing-sector > .item-search:nth-child(1) {
+  border: 2px dashed #00ff3c;
+}
+.listing-sector > .item-search:nth-child(2) {
+  border: 2px dashed #00e9ef;
+}
+.listing-sector > .item-search:nth-child(3) {
+  border: 2px dashed #ff7900;
+}
+.listing-sector > .item-search:nth-child(4) {
+  border: 2px dashed #882af4;
+}
+.listing-sector > .item-search:nth-child(5) {
+  border: 2px dashed #ddf219;
+}
+.listing-sector > .item-search:nth-child(6) {
+  border: 2px dashed #f22adf;
+}
+
+.lotes-cat {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, max-content);
+}
+.lotes-cat > li {
+  width: 50px;
+  height: 50px;
+}
+.cat-lotes {
+  margin-top: 40px;
+}
+.lotes-cat > li {
+  list-style: NONE;
+  border: 1px solid #ececec;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.state-lotes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+  padding-left: 0px !important;
+}
+.item-estado {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.state-lotes > .item-estado:nth-child(1) > ion-icon {
+  color: #418300;
+}
+.state-lotes > .item-estado:nth-child(2) > ion-icon {
+  color: #dd8b07;
+}
+.state-lotes > .item-estado:nth-child(3) > ion-icon {
+  color: #d54c4c;
+}
+
+.modal-lotes-dialogo {
+  max-width: 1040px !important;
+}
+.modal-lotes-dialogo .modal-content {
+  /* background-image: url("../img/back_cesped.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover; */
+} /* SECTION VISTAS */
+
+.vista-valle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+.vista-valle > img {
+  width: 80px;
+}
+
+/* vistas home */
+.galeria-swiper {
+  width: 100%;
+  height: max-content;
+  overflow: hidden;
+}
+.bg-vistas .swiper-slide.img-galeria {
+  width: 300px;
+  height: 500px;
+}
+
+/* amenidades home */
+
+/* reels */
+.bg-reels .listing-reels {
+  max-width: 1240px;
+  margin: auto;
+  padding: 0px 40px;
+}
+.reels-items {
+  gap: 30px;
+}
+
+/* more info */
+.moreinfo-description {
+  gap: 50px;
+}
+.moreinfo-swiper .img-galeria {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+.moreinfo-swiper .img-galeria > img {
+  padding: 0 !important;
+}
+.moreinfo-swiper {
+  position: relative;
+  overflow: hidden;
+}
+.moreinfo-swiper .img-galeria .content-info {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  padding: 12px 24px;
+  background-color: rgb(5, 116, 47);
+}
+.content-info h3 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.amenidades-list {
+  /* background: #c5fbcf; */
+  max-width: 1240px;
+  width: 100%;
+  gap: 30px;
+  justify-content: space-around;
+  padding: 40px 40px;
+  margin: auto;
+}
+.amenidades-list .box-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.amenidades-list .box-icon .icon {
+  width: 60px;
+}
+.amenidades-list .box-icon .description-box-icon {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* proyeccion section */
+.bg-proyeccion {
+  background-color: #fafafa;
+  /* background-image: url("../img/renders/03.jpg.png"); */
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.overlay-section {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: #186e51;
+  opacity: 0.95;
+  z-index: 800;
+}
+
+.entregable-list {
+  width: 100%;
+  max-width: 1040px;
+  gap: 30px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1000;
+}
+.entregable-list .item-card {
+  display: flex;
+  gap: 20px;
+}
+.entregable-list .item-card .number-item {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--bg-primary);
+  font-size: 18px;
+  padding: 15px;
+}
+/* .description-item {
+    color: #fff;
+  } */
+
+/* csss contacto */
+.form-contacto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0% 20%;
+}
+.form-contacto .form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-contacto .form-body .input-list {
+  gap: 20px;
+}
+.form-contacto .form-body .item-input {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  border: 1px solid #3d3f465e;
+  border-radius: 12px;
+  background-color: #fff;
+}
+.form-contacto .form-body .item-input:focus {
+  outline: none;
+}
+.form-contacto .footer-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-contacto .footer-form .btn-form {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 13px;
+  background-color: #365648;
+  color: #fff;
+}
+
+/* style redes sociales */
+.section-redes-socials {
+  width: max-content;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 4000;
+}
+.box-social {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #0a3829;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  /* box-shadow: 0px 0px 10px 2px #ececec; */
+}
+
+/* bg asesor */
+.bg-asesor {
+  position: fixed;
+  left: 0;
+  bottom: 50px;
+  z-index: 2000;
+}
+
+.btn-agenda-asesor {
+  background-color: #fcd772;
+  color: #001735;
+  font-weight: 500;
+  border-style: none;
+  border-radius: 0px 20px 20px 0px;
+  padding: 15px;
+}
+
+/* bg brochure */
+.bg-brochure {
+  width: 100%;
+}
+.bg-asesor .asesor-text {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 0 !important;
+}
+.bg-asesor .s-asesor-text {
+  font-weight: 600;
+  font-size: 16px;
+  color: #b6ffd4;
+  margin-bottom: 0 !important;
+}
+
+.bg-tarapoto {
+  background-color: #f5f5f5;
+}
+.bg-tarapoto .card-qh {
+  background-color: #fff;
+}
+
+.response-email {
+  width: 100%;
+  display: none;
+  padding: 10px 20px;
+}
+.response-email.error {
+  display: flex;
+  background-color: rgba(255, 0, 0, 0.642);
+  color: rgb(233, 3, 37);
+}
+.response-email.sucess {
+  display: flex;
+  background-color: rgb(10 202 118 / 62%);
+  color: rgb(2, 72, 46);
+}
+
+.mg-qh-port {
+  margin-top: 250px;
+}
+
+/* custom modal agendar reunion  */
+.modal-asesor .modal-content {
+  background-color: #164e3b !important;
+}
+
+@media screen and (max-width: 600px) {
+  .form-contacto {
+    padding: 0px !important;
+  }
+}
+@media (max-width: 600px) {
+  .texto-small-qh {
+    font-size: 22px;
+  }
+}
